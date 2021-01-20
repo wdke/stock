@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wdke.stock.storage.dao.StockInfoSnalysisMapper">
+  <resultMap id="BaseResultMap" type="com.wdke.stock.storage.entity.StockInfoSnalysis">
+    <id column="stock_code" jdbcType="VARCHAR" property="stockCode" />
+    <id column="stock_type" jdbcType="INTEGER" property="stockType" />
+    <result column="stock_name" jdbcType="VARCHAR" property="stockName" />
+    <result column="diff" jdbcType="REAL" property="diff" />
+    <result column="diff3" jdbcType="REAL" property="diff3" />
+    <result column="diff5" jdbcType="REAL" property="diff5" />
+    <result column="diff30" jdbcType="REAL" property="diff30" />
+    <result column="last_date" jdbcType="INTEGER" property="lastDate" />
+    <result column="last_open" jdbcType="REAL" property="lastOpen" />
+    <result column="last_high" jdbcType="REAL" property="lastHigh" />
+    <result column="last_close" jdbcType="REAL" property="lastClose" />
+    <result column="last_low" jdbcType="REAL" property="lastLow" />
+    <result column="last_volume" jdbcType="BIGINT" property="lastVolume" />
+    <result column="last_open_index" jdbcType="INTEGER" property="lastOpenIndex" />
+    <result column="last_high_index" jdbcType="INTEGER" property="lastHighIndex" />
+    <result column="last_low_index" jdbcType="INTEGER" property="lastLowIndex" />
+    <result column="last_close_index" jdbcType="INTEGER" property="lastCloseIndex" />
+    <result column="last_close_weght" jdbcType="REAL" property="lastCloseWeght" />
+    <result column="last_volume_index" jdbcType="INTEGER" property="lastVolumeIndex" />
+    <result column="base_number" jdbcType="INTEGER" property="baseNumber" />
+    <result column="average_price" jdbcType="REAL" property="averagePrice" />
+    <result column="high_price" jdbcType="REAL" property="highPrice" />
+    <result column="high_index" jdbcType="INTEGER" property="highIndex" />
+    <result column="high_day" jdbcType="INTEGER" property="highDay" />
+    <result column="low_price" jdbcType="REAL" property="lowPrice" />
+    <result column="low_index" jdbcType="INTEGER" property="lowIndex" />
+    <result column="low_day" jdbcType="INTEGER" property="lowDay" />
+    <result column="continue_days" jdbcType="INTEGER" property="continueDays" />
+    <result column="rising_days" jdbcType="INTEGER" property="risingDays" />
+    <result column="fall_days" jdbcType="INTEGER" property="fallDays" />
+    <result column="rising_days_near" jdbcType="INTEGER" property="risingDaysNear" />
+    <result column="fall_days_near" jdbcType="INTEGER" property="fallDaysNear" />
+    <result column="high_price_near" jdbcType="REAL" property="highPriceNear" />
+    <result column="high_index_near" jdbcType="INTEGER" property="highIndexNear" />
+    <result column="high_day_near" jdbcType="INTEGER" property="highDayNear" />
+    <result column="low_price_near" jdbcType="REAL" property="lowPriceNear" />
+    <result column="low_index_near" jdbcType="INTEGER" property="lowIndexNear" />
+    <result column="low_day_near" jdbcType="INTEGER" property="lowDayNear" />
+    <result column="buy_start" jdbcType="INTEGER" property="buyStart" />
+    <result column="buy_end" jdbcType="INTEGER" property="buyEnd" />
+    <result column="sell_start" jdbcType="INTEGER" property="sellStart" />
+    <result column="sell_end" jdbcType="INTEGER" property="sellEnd" />
+    <result column="isend" jdbcType="INTEGER" property="isend" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    stock_code, stock_type, stock_name, diff, diff3, diff5, diff30, last_date, last_open, 
+    last_high, last_close, last_low, last_volume, last_open_index, last_high_index, last_low_index, 
+    last_close_index, last_close_weght, last_volume_index, base_number, average_price, 
+    high_price, high_index, high_day, low_price, low_index, low_day, continue_days, rising_days, 
+    fall_days, rising_days_near, fall_days_near, high_price_near, high_index_near, high_day_near, 
+    low_price_near, low_index_near, low_day_near, buy_start, buy_end, sell_start, sell_end, 
+    isend, create_date, update_date
+  </sql>
+  <select id="selectByExample" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysisExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from stock_info_snalysis
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="offset != null and limit != null">
+      limit ${offset}, ${limit}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysisKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from stock_info_snalysis
+    where stock_code = #{stockCode,jdbcType=VARCHAR}
+      and stock_type = #{stockType,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysisKey">
+    delete from stock_info_snalysis
+    where stock_code = #{stockCode,jdbcType=VARCHAR}
+      and stock_type = #{stockType,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysisExample">
+    delete from stock_info_snalysis
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysis">
+    insert into stock_info_snalysis (stock_code, stock_type, stock_name, 
+      diff, diff3, diff5, diff30, 
+      last_date, last_open, last_high, 
+      last_close, last_low, last_volume, 
+      last_open_index, last_high_index, last_low_index, 
+      last_close_index, last_close_weght, last_volume_index, 
+      base_number, average_price, high_price, 
+      high_index, high_day, low_price, 
+      low_index, low_day, continue_days, 
+      rising_days, fall_days, rising_days_near, 
+      fall_days_near, high_price_near, high_index_near, 
+      high_day_near, low_price_near, low_index_near, 
+      low_day_near, buy_start, buy_end, 
+      sell_start, sell_end, isend, 
+      create_date, update_date)
+    values (#{stockCode,jdbcType=VARCHAR}, #{stockType,jdbcType=INTEGER}, #{stockName,jdbcType=VARCHAR}, 
+      #{diff,jdbcType=REAL}, #{diff3,jdbcType=REAL}, #{diff5,jdbcType=REAL}, #{diff30,jdbcType=REAL}, 
+      #{lastDate,jdbcType=INTEGER}, #{lastOpen,jdbcType=REAL}, #{lastHigh,jdbcType=REAL}, 
+      #{lastClose,jdbcType=REAL}, #{lastLow,jdbcType=REAL}, #{lastVolume,jdbcType=BIGINT}, 
+      #{lastOpenIndex,jdbcType=INTEGER}, #{lastHighIndex,jdbcType=INTEGER}, #{lastLowIndex,jdbcType=INTEGER}, 
+      #{lastCloseIndex,jdbcType=INTEGER}, #{lastCloseWeght,jdbcType=REAL}, #{lastVolumeIndex,jdbcType=INTEGER}, 
+      #{baseNumber,jdbcType=INTEGER}, #{averagePrice,jdbcType=REAL}, #{highPrice,jdbcType=REAL}, 
+      #{highIndex,jdbcType=INTEGER}, #{highDay,jdbcType=INTEGER}, #{lowPrice,jdbcType=REAL}, 
+      #{lowIndex,jdbcType=INTEGER}, #{lowDay,jdbcType=INTEGER}, #{continueDays,jdbcType=INTEGER}, 
+      #{risingDays,jdbcType=INTEGER}, #{fallDays,jdbcType=INTEGER}, #{risingDaysNear,jdbcType=INTEGER}, 
+      #{fallDaysNear,jdbcType=INTEGER}, #{highPriceNear,jdbcType=REAL}, #{highIndexNear,jdbcType=INTEGER}, 
+      #{highDayNear,jdbcType=INTEGER}, #{lowPriceNear,jdbcType=REAL}, #{lowIndexNear,jdbcType=INTEGER}, 
+      #{lowDayNear,jdbcType=INTEGER}, #{buyStart,jdbcType=INTEGER}, #{buyEnd,jdbcType=INTEGER}, 
+      #{sellStart,jdbcType=INTEGER}, #{sellEnd,jdbcType=INTEGER}, #{isend,jdbcType=INTEGER}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysis">
+    insert into stock_info_snalysis
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="stockCode != null">
+        stock_code,
+      </if>
+      <if test="stockType != null">
+        stock_type,
+      </if>
+      <if test="stockName != null">
+        stock_name,
+      </if>
+      <if test="diff != null">
+        diff,
+      </if>
+      <if test="diff3 != null">
+        diff3,
+      </if>
+      <if test="diff5 != null">
+        diff5,
+      </if>
+      <if test="diff30 != null">
+        diff30,
+      </if>
+      <if test="lastDate != null">
+        last_date,
+      </if>
+      <if test="lastOpen != null">
+        last_open,
+      </if>
+      <if test="lastHigh != null">
+        last_high,
+      </if>
+      <if test="lastClose != null">
+        last_close,
+      </if>
+      <if test="lastLow != null">
+        last_low,
+      </if>
+      <if test="lastVolume != null">
+        last_volume,
+      </if>
+      <if test="lastOpenIndex != null">
+        last_open_index,
+      </if>
+      <if test="lastHighIndex != null">
+        last_high_index,
+      </if>
+      <if test="lastLowIndex != null">
+        last_low_index,
+      </if>
+      <if test="lastCloseIndex != null">
+        last_close_index,
+      </if>
+      <if test="lastCloseWeght != null">
+        last_close_weght,
+      </if>
+      <if test="lastVolumeIndex != null">
+        last_volume_index,
+      </if>
+      <if test="baseNumber != null">
+        base_number,
+      </if>
+      <if test="averagePrice != null">
+        average_price,
+      </if>
+      <if test="highPrice != null">
+        high_price,
+      </if>
+      <if test="highIndex != null">
+        high_index,
+      </if>
+      <if test="highDay != null">
+        high_day,
+      </if>
+      <if test="lowPrice != null">
+        low_price,
+      </if>
+      <if test="lowIndex != null">
+        low_index,
+      </if>
+      <if test="lowDay != null">
+        low_day,
+      </if>
+      <if test="continueDays != null">
+        continue_days,
+      </if>
+      <if test="risingDays != null">
+        rising_days,
+      </if>
+      <if test="fallDays != null">
+        fall_days,
+      </if>
+      <if test="risingDaysNear != null">
+        rising_days_near,
+      </if>
+      <if test="fallDaysNear != null">
+        fall_days_near,
+      </if>
+      <if test="highPriceNear != null">
+        high_price_near,
+      </if>
+      <if test="highIndexNear != null">
+        high_index_near,
+      </if>
+      <if test="highDayNear != null">
+        high_day_near,
+      </if>
+      <if test="lowPriceNear != null">
+        low_price_near,
+      </if>
+      <if test="lowIndexNear != null">
+        low_index_near,
+      </if>
+      <if test="lowDayNear != null">
+        low_day_near,
+      </if>
+      <if test="buyStart != null">
+        buy_start,
+      </if>
+      <if test="buyEnd != null">
+        buy_end,
+      </if>
+      <if test="sellStart != null">
+        sell_start,
+      </if>
+      <if test="sellEnd != null">
+        sell_end,
+      </if>
+      <if test="isend != null">
+        isend,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="stockCode != null">
+        #{stockCode,jdbcType=VARCHAR},
+      </if>
+      <if test="stockType != null">
+        #{stockType,jdbcType=INTEGER},
+      </if>
+      <if test="stockName != null">
+        #{stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="diff != null">
+        #{diff,jdbcType=REAL},
+      </if>
+      <if test="diff3 != null">
+        #{diff3,jdbcType=REAL},
+      </if>
+      <if test="diff5 != null">
+        #{diff5,jdbcType=REAL},
+      </if>
+      <if test="diff30 != null">
+        #{diff30,jdbcType=REAL},
+      </if>
+      <if test="lastDate != null">
+        #{lastDate,jdbcType=INTEGER},
+      </if>
+      <if test="lastOpen != null">
+        #{lastOpen,jdbcType=REAL},
+      </if>
+      <if test="lastHigh != null">
+        #{lastHigh,jdbcType=REAL},
+      </if>
+      <if test="lastClose != null">
+        #{lastClose,jdbcType=REAL},
+      </if>
+      <if test="lastLow != null">
+        #{lastLow,jdbcType=REAL},
+      </if>
+      <if test="lastVolume != null">
+        #{lastVolume,jdbcType=BIGINT},
+      </if>
+      <if test="lastOpenIndex != null">
+        #{lastOpenIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lastHighIndex != null">
+        #{lastHighIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lastLowIndex != null">
+        #{lastLowIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lastCloseIndex != null">
+        #{lastCloseIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lastCloseWeght != null">
+        #{lastCloseWeght,jdbcType=REAL},
+      </if>
+      <if test="lastVolumeIndex != null">
+        #{lastVolumeIndex,jdbcType=INTEGER},
+      </if>
+      <if test="baseNumber != null">
+        #{baseNumber,jdbcType=INTEGER},
+      </if>
+      <if test="averagePrice != null">
+        #{averagePrice,jdbcType=REAL},
+      </if>
+      <if test="highPrice != null">
+        #{highPrice,jdbcType=REAL},
+      </if>
+      <if test="highIndex != null">
+        #{highIndex,jdbcType=INTEGER},
+      </if>
+      <if test="highDay != null">
+        #{highDay,jdbcType=INTEGER},
+      </if>
+      <if test="lowPrice != null">
+        #{lowPrice,jdbcType=REAL},
+      </if>
+      <if test="lowIndex != null">
+        #{lowIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lowDay != null">
+        #{lowDay,jdbcType=INTEGER},
+      </if>
+      <if test="continueDays != null">
+        #{continueDays,jdbcType=INTEGER},
+      </if>
+      <if test="risingDays != null">
+        #{risingDays,jdbcType=INTEGER},
+      </if>
+      <if test="fallDays != null">
+        #{fallDays,jdbcType=INTEGER},
+      </if>
+      <if test="risingDaysNear != null">
+        #{risingDaysNear,jdbcType=INTEGER},
+      </if>
+      <if test="fallDaysNear != null">
+        #{fallDaysNear,jdbcType=INTEGER},
+      </if>
+      <if test="highPriceNear != null">
+        #{highPriceNear,jdbcType=REAL},
+      </if>
+      <if test="highIndexNear != null">
+        #{highIndexNear,jdbcType=INTEGER},
+      </if>
+      <if test="highDayNear != null">
+        #{highDayNear,jdbcType=INTEGER},
+      </if>
+      <if test="lowPriceNear != null">
+        #{lowPriceNear,jdbcType=REAL},
+      </if>
+      <if test="lowIndexNear != null">
+        #{lowIndexNear,jdbcType=INTEGER},
+      </if>
+      <if test="lowDayNear != null">
+        #{lowDayNear,jdbcType=INTEGER},
+      </if>
+      <if test="buyStart != null">
+        #{buyStart,jdbcType=INTEGER},
+      </if>
+      <if test="buyEnd != null">
+        #{buyEnd,jdbcType=INTEGER},
+      </if>
+      <if test="sellStart != null">
+        #{sellStart,jdbcType=INTEGER},
+      </if>
+      <if test="sellEnd != null">
+        #{sellEnd,jdbcType=INTEGER},
+      </if>
+      <if test="isend != null">
+        #{isend,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysisExample" resultType="java.lang.Long">
+    select count(*) from stock_info_snalysis
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update stock_info_snalysis
+    <set>
+      <if test="record.stockCode != null">
+        stock_code = #{record.stockCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.stockType != null">
+        stock_type = #{record.stockType,jdbcType=INTEGER},
+      </if>
+      <if test="record.stockName != null">
+        stock_name = #{record.stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.diff != null">
+        diff = #{record.diff,jdbcType=REAL},
+      </if>
+      <if test="record.diff3 != null">
+        diff3 = #{record.diff3,jdbcType=REAL},
+      </if>
+      <if test="record.diff5 != null">
+        diff5 = #{record.diff5,jdbcType=REAL},
+      </if>
+      <if test="record.diff30 != null">
+        diff30 = #{record.diff30,jdbcType=REAL},
+      </if>
+      <if test="record.lastDate != null">
+        last_date = #{record.lastDate,jdbcType=INTEGER},
+      </if>
+      <if test="record.lastOpen != null">
+        last_open = #{record.lastOpen,jdbcType=REAL},
+      </if>
+      <if test="record.lastHigh != null">
+        last_high = #{record.lastHigh,jdbcType=REAL},
+      </if>
+      <if test="record.lastClose != null">
+        last_close = #{record.lastClose,jdbcType=REAL},
+      </if>
+      <if test="record.lastLow != null">
+        last_low = #{record.lastLow,jdbcType=REAL},
+      </if>
+      <if test="record.lastVolume != null">
+        last_volume = #{record.lastVolume,jdbcType=BIGINT},
+      </if>
+      <if test="record.lastOpenIndex != null">
+        last_open_index = #{record.lastOpenIndex,jdbcType=INTEGER},
+      </if>
+      <if test="record.lastHighIndex != null">
+        last_high_index = #{record.lastHighIndex,jdbcType=INTEGER},
+      </if>
+      <if test="record.lastLowIndex != null">
+        last_low_index = #{record.lastLowIndex,jdbcType=INTEGER},
+      </if>
+      <if test="record.lastCloseIndex != null">
+        last_close_index = #{record.lastCloseIndex,jdbcType=INTEGER},
+      </if>
+      <if test="record.lastCloseWeght != null">
+        last_close_weght = #{record.lastCloseWeght,jdbcType=REAL},
+      </if>
+      <if test="record.lastVolumeIndex != null">
+        last_volume_index = #{record.lastVolumeIndex,jdbcType=INTEGER},
+      </if>
+      <if test="record.baseNumber != null">
+        base_number = #{record.baseNumber,jdbcType=INTEGER},
+      </if>
+      <if test="record.averagePrice != null">
+        average_price = #{record.averagePrice,jdbcType=REAL},
+      </if>
+      <if test="record.highPrice != null">
+        high_price = #{record.highPrice,jdbcType=REAL},
+      </if>
+      <if test="record.highIndex != null">
+        high_index = #{record.highIndex,jdbcType=INTEGER},
+      </if>
+      <if test="record.highDay != null">
+        high_day = #{record.highDay,jdbcType=INTEGER},
+      </if>
+      <if test="record.lowPrice != null">
+        low_price = #{record.lowPrice,jdbcType=REAL},
+      </if>
+      <if test="record.lowIndex != null">
+        low_index = #{record.lowIndex,jdbcType=INTEGER},
+      </if>
+      <if test="record.lowDay != null">
+        low_day = #{record.lowDay,jdbcType=INTEGER},
+      </if>
+      <if test="record.continueDays != null">
+        continue_days = #{record.continueDays,jdbcType=INTEGER},
+      </if>
+      <if test="record.risingDays != null">
+        rising_days = #{record.risingDays,jdbcType=INTEGER},
+      </if>
+      <if test="record.fallDays != null">
+        fall_days = #{record.fallDays,jdbcType=INTEGER},
+      </if>
+      <if test="record.risingDaysNear != null">
+        rising_days_near = #{record.risingDaysNear,jdbcType=INTEGER},
+      </if>
+      <if test="record.fallDaysNear != null">
+        fall_days_near = #{record.fallDaysNear,jdbcType=INTEGER},
+      </if>
+      <if test="record.highPriceNear != null">
+        high_price_near = #{record.highPriceNear,jdbcType=REAL},
+      </if>
+      <if test="record.highIndexNear != null">
+        high_index_near = #{record.highIndexNear,jdbcType=INTEGER},
+      </if>
+      <if test="record.highDayNear != null">
+        high_day_near = #{record.highDayNear,jdbcType=INTEGER},
+      </if>
+      <if test="record.lowPriceNear != null">
+        low_price_near = #{record.lowPriceNear,jdbcType=REAL},
+      </if>
+      <if test="record.lowIndexNear != null">
+        low_index_near = #{record.lowIndexNear,jdbcType=INTEGER},
+      </if>
+      <if test="record.lowDayNear != null">
+        low_day_near = #{record.lowDayNear,jdbcType=INTEGER},
+      </if>
+      <if test="record.buyStart != null">
+        buy_start = #{record.buyStart,jdbcType=INTEGER},
+      </if>
+      <if test="record.buyEnd != null">
+        buy_end = #{record.buyEnd,jdbcType=INTEGER},
+      </if>
+      <if test="record.sellStart != null">
+        sell_start = #{record.sellStart,jdbcType=INTEGER},
+      </if>
+      <if test="record.sellEnd != null">
+        sell_end = #{record.sellEnd,jdbcType=INTEGER},
+      </if>
+      <if test="record.isend != null">
+        isend = #{record.isend,jdbcType=INTEGER},
+      </if>
+      <if test="record.createDate != null">
+        create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateDate != null">
+        update_date = #{record.updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateSql != null" >
+        ${record.updateSql},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update stock_info_snalysis
+    set stock_code = #{record.stockCode,jdbcType=VARCHAR},
+      stock_type = #{record.stockType,jdbcType=INTEGER},
+      stock_name = #{record.stockName,jdbcType=VARCHAR},
+      diff = #{record.diff,jdbcType=REAL},
+      diff3 = #{record.diff3,jdbcType=REAL},
+      diff5 = #{record.diff5,jdbcType=REAL},
+      diff30 = #{record.diff30,jdbcType=REAL},
+      last_date = #{record.lastDate,jdbcType=INTEGER},
+      last_open = #{record.lastOpen,jdbcType=REAL},
+      last_high = #{record.lastHigh,jdbcType=REAL},
+      last_close = #{record.lastClose,jdbcType=REAL},
+      last_low = #{record.lastLow,jdbcType=REAL},
+      last_volume = #{record.lastVolume,jdbcType=BIGINT},
+      last_open_index = #{record.lastOpenIndex,jdbcType=INTEGER},
+      last_high_index = #{record.lastHighIndex,jdbcType=INTEGER},
+      last_low_index = #{record.lastLowIndex,jdbcType=INTEGER},
+      last_close_index = #{record.lastCloseIndex,jdbcType=INTEGER},
+      last_close_weght = #{record.lastCloseWeght,jdbcType=REAL},
+      last_volume_index = #{record.lastVolumeIndex,jdbcType=INTEGER},
+      base_number = #{record.baseNumber,jdbcType=INTEGER},
+      average_price = #{record.averagePrice,jdbcType=REAL},
+      high_price = #{record.highPrice,jdbcType=REAL},
+      high_index = #{record.highIndex,jdbcType=INTEGER},
+      high_day = #{record.highDay,jdbcType=INTEGER},
+      low_price = #{record.lowPrice,jdbcType=REAL},
+      low_index = #{record.lowIndex,jdbcType=INTEGER},
+      low_day = #{record.lowDay,jdbcType=INTEGER},
+      continue_days = #{record.continueDays,jdbcType=INTEGER},
+      rising_days = #{record.risingDays,jdbcType=INTEGER},
+      fall_days = #{record.fallDays,jdbcType=INTEGER},
+      rising_days_near = #{record.risingDaysNear,jdbcType=INTEGER},
+      fall_days_near = #{record.fallDaysNear,jdbcType=INTEGER},
+      high_price_near = #{record.highPriceNear,jdbcType=REAL},
+      high_index_near = #{record.highIndexNear,jdbcType=INTEGER},
+      high_day_near = #{record.highDayNear,jdbcType=INTEGER},
+      low_price_near = #{record.lowPriceNear,jdbcType=REAL},
+      low_index_near = #{record.lowIndexNear,jdbcType=INTEGER},
+      low_day_near = #{record.lowDayNear,jdbcType=INTEGER},
+      buy_start = #{record.buyStart,jdbcType=INTEGER},
+      buy_end = #{record.buyEnd,jdbcType=INTEGER},
+      sell_start = #{record.sellStart,jdbcType=INTEGER},
+      sell_end = #{record.sellEnd,jdbcType=INTEGER},
+      isend = #{record.isend,jdbcType=INTEGER},
+      create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      update_date = #{record.updateDate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysis">
+    update stock_info_snalysis
+    <set>
+      <if test="stockName != null">
+        stock_name = #{stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="diff != null">
+        diff = #{diff,jdbcType=REAL},
+      </if>
+      <if test="diff3 != null">
+        diff3 = #{diff3,jdbcType=REAL},
+      </if>
+      <if test="diff5 != null">
+        diff5 = #{diff5,jdbcType=REAL},
+      </if>
+      <if test="diff30 != null">
+        diff30 = #{diff30,jdbcType=REAL},
+      </if>
+      <if test="lastDate != null">
+        last_date = #{lastDate,jdbcType=INTEGER},
+      </if>
+      <if test="lastOpen != null">
+        last_open = #{lastOpen,jdbcType=REAL},
+      </if>
+      <if test="lastHigh != null">
+        last_high = #{lastHigh,jdbcType=REAL},
+      </if>
+      <if test="lastClose != null">
+        last_close = #{lastClose,jdbcType=REAL},
+      </if>
+      <if test="lastLow != null">
+        last_low = #{lastLow,jdbcType=REAL},
+      </if>
+      <if test="lastVolume != null">
+        last_volume = #{lastVolume,jdbcType=BIGINT},
+      </if>
+      <if test="lastOpenIndex != null">
+        last_open_index = #{lastOpenIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lastHighIndex != null">
+        last_high_index = #{lastHighIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lastLowIndex != null">
+        last_low_index = #{lastLowIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lastCloseIndex != null">
+        last_close_index = #{lastCloseIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lastCloseWeght != null">
+        last_close_weght = #{lastCloseWeght,jdbcType=REAL},
+      </if>
+      <if test="lastVolumeIndex != null">
+        last_volume_index = #{lastVolumeIndex,jdbcType=INTEGER},
+      </if>
+      <if test="baseNumber != null">
+        base_number = #{baseNumber,jdbcType=INTEGER},
+      </if>
+      <if test="averagePrice != null">
+        average_price = #{averagePrice,jdbcType=REAL},
+      </if>
+      <if test="highPrice != null">
+        high_price = #{highPrice,jdbcType=REAL},
+      </if>
+      <if test="highIndex != null">
+        high_index = #{highIndex,jdbcType=INTEGER},
+      </if>
+      <if test="highDay != null">
+        high_day = #{highDay,jdbcType=INTEGER},
+      </if>
+      <if test="lowPrice != null">
+        low_price = #{lowPrice,jdbcType=REAL},
+      </if>
+      <if test="lowIndex != null">
+        low_index = #{lowIndex,jdbcType=INTEGER},
+      </if>
+      <if test="lowDay != null">
+        low_day = #{lowDay,jdbcType=INTEGER},
+      </if>
+      <if test="continueDays != null">
+        continue_days = #{continueDays,jdbcType=INTEGER},
+      </if>
+      <if test="risingDays != null">
+        rising_days = #{risingDays,jdbcType=INTEGER},
+      </if>
+      <if test="fallDays != null">
+        fall_days = #{fallDays,jdbcType=INTEGER},
+      </if>
+      <if test="risingDaysNear != null">
+        rising_days_near = #{risingDaysNear,jdbcType=INTEGER},
+      </if>
+      <if test="fallDaysNear != null">
+        fall_days_near = #{fallDaysNear,jdbcType=INTEGER},
+      </if>
+      <if test="highPriceNear != null">
+        high_price_near = #{highPriceNear,jdbcType=REAL},
+      </if>
+      <if test="highIndexNear != null">
+        high_index_near = #{highIndexNear,jdbcType=INTEGER},
+      </if>
+      <if test="highDayNear != null">
+        high_day_near = #{highDayNear,jdbcType=INTEGER},
+      </if>
+      <if test="lowPriceNear != null">
+        low_price_near = #{lowPriceNear,jdbcType=REAL},
+      </if>
+      <if test="lowIndexNear != null">
+        low_index_near = #{lowIndexNear,jdbcType=INTEGER},
+      </if>
+      <if test="lowDayNear != null">
+        low_day_near = #{lowDayNear,jdbcType=INTEGER},
+      </if>
+      <if test="buyStart != null">
+        buy_start = #{buyStart,jdbcType=INTEGER},
+      </if>
+      <if test="buyEnd != null">
+        buy_end = #{buyEnd,jdbcType=INTEGER},
+      </if>
+      <if test="sellStart != null">
+        sell_start = #{sellStart,jdbcType=INTEGER},
+      </if>
+      <if test="sellEnd != null">
+        sell_end = #{sellEnd,jdbcType=INTEGER},
+      </if>
+      <if test="isend != null">
+        isend = #{isend,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where stock_code = #{stockCode,jdbcType=VARCHAR}
+      and stock_type = #{stockType,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysis">
+    update stock_info_snalysis
+    set stock_name = #{stockName,jdbcType=VARCHAR},
+      diff = #{diff,jdbcType=REAL},
+      diff3 = #{diff3,jdbcType=REAL},
+      diff5 = #{diff5,jdbcType=REAL},
+      diff30 = #{diff30,jdbcType=REAL},
+      last_date = #{lastDate,jdbcType=INTEGER},
+      last_open = #{lastOpen,jdbcType=REAL},
+      last_high = #{lastHigh,jdbcType=REAL},
+      last_close = #{lastClose,jdbcType=REAL},
+      last_low = #{lastLow,jdbcType=REAL},
+      last_volume = #{lastVolume,jdbcType=BIGINT},
+      last_open_index = #{lastOpenIndex,jdbcType=INTEGER},
+      last_high_index = #{lastHighIndex,jdbcType=INTEGER},
+      last_low_index = #{lastLowIndex,jdbcType=INTEGER},
+      last_close_index = #{lastCloseIndex,jdbcType=INTEGER},
+      last_close_weght = #{lastCloseWeght,jdbcType=REAL},
+      last_volume_index = #{lastVolumeIndex,jdbcType=INTEGER},
+      base_number = #{baseNumber,jdbcType=INTEGER},
+      average_price = #{averagePrice,jdbcType=REAL},
+      high_price = #{highPrice,jdbcType=REAL},
+      high_index = #{highIndex,jdbcType=INTEGER},
+      high_day = #{highDay,jdbcType=INTEGER},
+      low_price = #{lowPrice,jdbcType=REAL},
+      low_index = #{lowIndex,jdbcType=INTEGER},
+      low_day = #{lowDay,jdbcType=INTEGER},
+      continue_days = #{continueDays,jdbcType=INTEGER},
+      rising_days = #{risingDays,jdbcType=INTEGER},
+      fall_days = #{fallDays,jdbcType=INTEGER},
+      rising_days_near = #{risingDaysNear,jdbcType=INTEGER},
+      fall_days_near = #{fallDaysNear,jdbcType=INTEGER},
+      high_price_near = #{highPriceNear,jdbcType=REAL},
+      high_index_near = #{highIndexNear,jdbcType=INTEGER},
+      high_day_near = #{highDayNear,jdbcType=INTEGER},
+      low_price_near = #{lowPriceNear,jdbcType=REAL},
+      low_index_near = #{lowIndexNear,jdbcType=INTEGER},
+      low_day_near = #{lowDayNear,jdbcType=INTEGER},
+      buy_start = #{buyStart,jdbcType=INTEGER},
+      buy_end = #{buyEnd,jdbcType=INTEGER},
+      sell_start = #{sellStart,jdbcType=INTEGER},
+      sell_end = #{sellEnd,jdbcType=INTEGER},
+      isend = #{isend,jdbcType=INTEGER},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP}
+    where stock_code = #{stockCode,jdbcType=VARCHAR}
+      and stock_type = #{stockType,jdbcType=INTEGER}
+  </update>
+  <select id="selectByExampleWithRowbounds" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysisExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from stock_info_snalysis
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="sumByExample" parameterType="com.wdke.stock.storage.entity.StockInfoSnalysisExample" resultType="long" >
+    select sum(${sumCol}) from stock_info_snalysis
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <insert id="batchInsert">
+    <if test="items.get(0) != null">
+            insert into stock_info_snalysis  (stock_code, stock_type, stock_name, 
+        diff, diff3, diff5, diff30, 
+        last_date, last_open, last_high, 
+        last_close, last_low, last_volume, 
+        last_open_index, last_high_index, last_low_index, 
+        last_close_index, last_close_weght, last_volume_index, 
+        base_number, average_price, high_price, 
+        high_index, high_day, low_price, 
+        low_index, low_day, continue_days, 
+        rising_days, fall_days, rising_days_near, 
+        fall_days_near, high_price_near, high_index_near, 
+        high_day_near, low_price_near, low_index_near, 
+        low_day_near, buy_start, buy_end, 
+        sell_start, sell_end, isend, 
+        create_date, update_date)
+      values
+      <foreach collection="items" item="item" index="index" separator=",">
+      (#{item.stockCode,jdbcType=VARCHAR}, #{item.stockType,jdbcType=INTEGER}, #{item.stockName,jdbcType=VARCHAR}, 
+        #{item.diff,jdbcType=REAL}, #{item.diff3,jdbcType=REAL}, #{item.diff5,jdbcType=REAL}, #{item.diff30,jdbcType=REAL}, 
+        #{item.lastDate,jdbcType=INTEGER}, #{item.lastOpen,jdbcType=REAL}, #{item.lastHigh,jdbcType=REAL}, 
+        #{item.lastClose,jdbcType=REAL}, #{item.lastLow,jdbcType=REAL}, #{item.lastVolume,jdbcType=BIGINT}, 
+        #{item.lastOpenIndex,jdbcType=INTEGER}, #{item.lastHighIndex,jdbcType=INTEGER}, #{item.lastLowIndex,jdbcType=INTEGER}, 
+        #{item.lastCloseIndex,jdbcType=INTEGER}, #{item.lastCloseWeght,jdbcType=REAL}, #{item.lastVolumeIndex,jdbcType=INTEGER}, 
+        #{item.baseNumber,jdbcType=INTEGER}, #{item.averagePrice,jdbcType=REAL}, #{item.highPrice,jdbcType=REAL}, 
+        #{item.highIndex,jdbcType=INTEGER}, #{item.highDay,jdbcType=INTEGER}, #{item.lowPrice,jdbcType=REAL}, 
+        #{item.lowIndex,jdbcType=INTEGER}, #{item.lowDay,jdbcType=INTEGER}, #{item.continueDays,jdbcType=INTEGER}, 
+        #{item.risingDays,jdbcType=INTEGER}, #{item.fallDays,jdbcType=INTEGER}, #{item.risingDaysNear,jdbcType=INTEGER}, 
+        #{item.fallDaysNear,jdbcType=INTEGER}, #{item.highPriceNear,jdbcType=REAL}, #{item.highIndexNear,jdbcType=INTEGER}, 
+        #{item.highDayNear,jdbcType=INTEGER}, #{item.lowPriceNear,jdbcType=REAL}, #{item.lowIndexNear,jdbcType=INTEGER}, 
+        #{item.lowDayNear,jdbcType=INTEGER}, #{item.buyStart,jdbcType=INTEGER}, #{item.buyEnd,jdbcType=INTEGER}, 
+        #{item.sellStart,jdbcType=INTEGER}, #{item.sellEnd,jdbcType=INTEGER}, #{item.isend,jdbcType=INTEGER}, 
+        #{item.createDate,jdbcType=TIMESTAMP}, #{item.updateDate,jdbcType=TIMESTAMP})
+      </foreach>
+      ON DUPLICATE KEY UPDATE
+      last_date=values(last_date),
+      last_open=values(last_open),
+      last_high=values(last_high),
+      last_close=values(last_close),
+      last_low=values(last_low),
+      last_volume=values(last_volume),
+
+      last_open_index=values(last_open_index),
+      last_high_index=values(last_high_index),
+      last_low_index=values(last_low_index),
+
+      last_close_index=values(last_close_index),
+      last_volume_index=values(last_volume_index),
+      base_number=values(base_number),
+
+      average_price=values(average_price),
+      high_price=values(high_price),
+      high_index=values(high_index),
+
+      high_day=values(high_day),
+      low_price=values(low_price),
+      low_index=values(low_index),
+
+      low_day=values(low_day),
+      continue_days=values(continue_days),
+      rising_days=values(rising_days),
+
+      fall_days=values(fall_days),
+      rising_days_near=values(rising_days_near),
+      fall_days_near=values(fall_days_near),
+
+      high_price_near=values(high_price_near),
+      high_index_near=values(high_index_near),
+      high_day_near=values(high_day_near),
+
+      low_price_near=values(low_price_near),
+      low_index_near=values(low_index_near),
+      low_day_near=values(low_day_near),
+
+
+      buy_start=values(buy_start),
+      buy_end=values(buy_end),
+      sell_start=values(sell_start),
+      sell_end=values(sell_end),
+
+      isend=values(isend)
+    </if>
+  </insert>
+</mapper>

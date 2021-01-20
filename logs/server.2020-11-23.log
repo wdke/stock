@@ -1,0 +1,1215 @@
+13:46:55 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext  INFO [,,]   Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2a898881: startup date [Mon Nov 23 13:46:55 CST 2020]; root of context hierarchy
+13:46:55 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder  WARN [,,]   For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+13:46:55 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:46:55 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$624b045a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:56 [main] INFO  c.w.s.StockApplication  INFO [,,]   The following profiles are active: dev
+13:46:56 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29d334c: startup date [Mon Nov 23 13:46:56 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2a898881
+13:46:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  INFO [,,]   Multiple Spring Data modules found, entering strict repository configuration mode!
+13:46:57 [main] INFO  o.s.c.c.s.GenericScope  INFO [,,]   BeanFactory id=7c46808e-bc70-3495-b56e-286873128e16
+13:46:57 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:46:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4631015d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$624b045a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:57 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat initialized with port(s): 8811 (http)
+13:46:57 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Initializing ProtocolHandler ["http-nio-8811"]
+13:46:57 [main] INFO  o.a.c.c.StandardService  INFO [,,]   Starting service [Tomcat]
+13:46:57 [main] INFO  o.a.c.c.StandardEngine  INFO [,,]   Starting Servlet Engine: Apache Tomcat/8.5.34
+13:46:57 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener  INFO [,,]   The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wdke/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13:46:58 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring embedded WebApplicationContext
+13:46:58 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader  INFO [,,]   Root WebApplicationContext: initialization completed in 1961 ms
+13:46:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'characterEncodingFilter' to: [/*]
+13:46:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:46:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:46:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'requestContextFilter' to: [/*]
+13:46:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'corsFilter' to: [/*]
+13:46:58 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  INFO [,,]   Servlet dispatcherServlet mapped to [/]
+13:47:00 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService
+13:47:00 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService 'executor'
+13:47:00 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+13:47:00 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:47:00 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+13:47:00 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:47:00 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  INFO [,,]   Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29d334c: startup date [Mon Nov 23 13:46:56 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2a898881
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/buySell]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.buySell()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/secconds/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleSeccondsToday()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/calculate]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.calculateToday()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/day/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleDayToday()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{year}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.Integer)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{stockCode}/{type}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.String,java.lang.Integer)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/login],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.login(com.wdke.stock.common.model.LoginParam)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/wechat/check],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.wechatCheck(com.wdke.stock.web.args.WxUserInfoArgs)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/register],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.LoginController.register(com.wdke.stock.web.args.SysUserArgs)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockController.todayHoldPriceVolume()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockController.echartData(java.lang.Integer,java.lang.String)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/detail/{id}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.Map<java.lang.String, java.lang.Object>> com.wdke.stock.web.StockCurrentHoldPriceController.detail(java.lang.Integer)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockCurrentHoldPriceVo>> com.wdke.stock.web.StockCurrentHoldPriceController.list()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/search/{words}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockInfoVo>> com.wdke.stock.web.StockInfoController.searchStockInfoList(java.lang.String)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/snalysis/list],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<com.github.pagehelper.PageInfo<com.wdke.stock.storage.entity.StockInfoSnalysis>> com.wdke.stock.web.StockInfoController.stockInfoList(com.wdke.stock.web.args.StockInfoSnalysisArgs)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoDayController.buySellCont(java.lang.Integer,java.lang.String)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoDayController.buySellContHole()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDaysHole()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDays(java.lang.Integer,java.lang.String)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/undo/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.undo(java.lang.Integer)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/add],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.add(com.wdke.stock.web.args.StockTradingAddArgs)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/remove/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.delete(java.lang.Integer)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.storage.entity.StockTrading>> com.wdke.stock.web.StockTradingController.list()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/complete/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.end(java.lang.Integer)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock/mobile]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.mobile()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.index()
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:47:01 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:47:01 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:47:01 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:47:01 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver  INFO [,,]   Detected @ExceptionHandler methods in globalExceptionHandler
+13:47:02 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping  INFO [,,]   Adding welcome page template: index
+13:47:02 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration  WARN [,,]   spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Registering beans for JMX exposure on startup
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'dataSource' has been autodetected for JMX exposure
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'refreshScope' has been autodetected for JMX exposure
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'environmentManager' has been autodetected for JMX exposure
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=29d334c,type=ConfigurationPropertiesRebinder]
+13:47:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+13:47:03 [main] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Starting beans in phase 0
+13:47:03 [main] INFO  o.s.c.n.e.InstanceInfoFactory  INFO [,,]   Setting initial instance status as: STARTING
+13:47:03 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Initializing Eureka in region us-east-1
+13:47:03 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON encoding codec LegacyJacksonJson
+13:47:03 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON decoding codec LegacyJacksonJson
+13:47:03 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML encoding codec XStreamXml
+13:47:03 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML decoding codec XStreamXml
+13:47:04 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Disable delta property : false
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Single vip registry refresh property : null
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Force full registry fetch : false
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application is null : false
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Registered Applications size is zero : true
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application version is -1: true
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Getting all instance registry info from the eureka server
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   The response status is 200
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Starting heartbeat executor: renew interval is: 30
+13:47:04 [main] INFO  c.n.d.InstanceInfoReplicator  INFO [,,]   InstanceInfoReplicator onDemand update allowed rate per min is 4
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Discovery Client initialized at timestamp 1606110424514 with initial instances count: 207
+13:47:04 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Registering application STOCK with eureka with status UP
+13:47:04 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Saw local status change event StatusChangeEvent [timestamp=1606110424527, current=UP, previous=STARTING]
+13:47:04 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811: registering service...
+13:47:04 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Starting ProtocolHandler ["http-nio-8811"]
+13:47:04 [main] INFO  o.a.t.u.n.NioSelectorPool  INFO [,,]   Using a shared selector for servlet write/read
+13:47:04 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat started on port(s): 8811 (http) with context path ''
+13:47:04 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811 - registration status: 204
+13:47:04 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration  INFO [,,]   Updating port to 8811
+13:47:04 [main] INFO  c.w.s.StockApplication  INFO [,,]   Started StockApplication in 9.806 seconds (JVM running for 11.65)
+13:47:04 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   starting
+13:47:04 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   Successful service end!
+13:48:22 [http-nio-8811-exec-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:48:22 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization started
+13:48:22 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+13:48:22 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:48:22 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:48:22 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 不成功，准备token验证
+13:48:22 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   preHandle end  result->getRequestURI->【URI/stock/info/day/echart/hold】, 
+13:48:33 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   不需要登陆信息 requestURI->/stock/login
+13:48:33 [http-nio-8811-exec-2] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} inited
+13:48:34 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:48:34 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:48:34 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:49:48 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:49:48 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:49:48 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:49:48 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:49 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:49 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:49 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:50 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:50 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:51 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:49:51 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:49:51 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:49:51 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:52 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:52 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:53 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:53 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:54 [http-nio-8811-exec-4] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:54 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:49:54 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:49:54 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:49:54 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：8A7DFF074B5028B9E1FFB100E6E54EE6】【duration：6000】
+13:49:54 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:49:54 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:49:54 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:49:54 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:55 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:55 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:56 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:57 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:58 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:58 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:58 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:59 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:49:59 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230049,greaTime=202011180049
+13:50:00 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:01 [http-nio-8811-exec-7] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:01 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：8A7DFF074B5028B9E1FFB100E6E54EE6】【duration：6780】
+13:50:12 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:50:12 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:50:12 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:50:12 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:12 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:12 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:13 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:13 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:14 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:14 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:50:14 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:50:14 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:50:14 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:15 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:16 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:16 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:17 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:17 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockInfoSeccondsServiceImpl  INFO [,,]   comparingThreeDays lessTime=202011230050,greaTime=202011180050
+13:50:18 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：8A7DFF074B5028B9E1FFB100E6E54EE6】【duration：5914】
+13:50:36 [http-nio-8811-exec-10] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:50:36 [http-nio-8811-exec-10] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:50:36 [http-nio-8811-exec-10] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA1OTI2OTM0LCJ1c2VySWQiOjEsImlhdCI6MTYwNTg0MDUzNCwianRpIjoiNjJiMGRlNzYtNDE2ZS00MTY1LWEwYmYtZmU5OTM2YjI0ZjVjIiwidXNlcm5hbWUiOiJ3ZGtlIn0.SByoEf108jFlkBMawCdxwKNc8svnNLXlRIXh4byo5ZI
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:47
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:45
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:48
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:48
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:48
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:48
+13:50:49 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:48
+13:50:50 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:48
+13:50:50 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:47
+13:50:50 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:45
+13:50:50 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:48
+13:50:50 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:50:48
+13:52:04 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:52:07 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+13:52:07 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=aHxpmyTqAhnVgh5E0yacGg==
+13:52:07 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 不成功，准备token验证
+13:52:07 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   preHandle end  result->getRequestURI->【URI//stock/info/snalysis/list】, 
+13:52:10 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   不需要登陆信息 requestURI->//stock/wechat/check
+13:52:11 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:26
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:27
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:27
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:27
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:30
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:30
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:30
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:27
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:29
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:30
+13:53:31 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:30
+13:53:32 [http-nio-8811-exec-7] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:53:30
+13:56:17 [http-nio-8811-exec-6] ERROR c.w.s.u.OkHttpUtils ERROR [,,]   同步http GET 请求失败,url:http://img1.money.126.net/data/hs/time/today/0600221.json
+java.net.ConnectException: Failed to connect to img1.money.126.net/123.134.184.158:80
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:285)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:195)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:235)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:76)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:245)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:74)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:197)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:148)
+	at com.wdke.stock.utils.OkHttpUtils.httpGet(OkHttpUtils.java:61)
+	at com.wdke.stock.https.WangyiStockApi.secondTodayData(WangyiStockApi.java:49)
+	at com.wdke.stock.service.impl.StockServiceImpl.todayPriceVolume(StockServiceImpl.java:73)
+	at com.wdke.stock.service.impl.StockServiceImpl.lambda$todayHoldPriceVolume$0(StockServiceImpl.java:106)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.wdke.stock.service.impl.StockServiceImpl.todayHoldPriceVolume(StockServiceImpl.java:105)
+	at com.wdke.stock.service.impl.StockServiceImpl$$FastClassBySpringCGLIB$$f47faca2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.wdke.stock.common.config.aop.ActionAop.doAround(ActionAop.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wdke.stock.service.impl.StockServiceImpl$$EnhancerBySpringCGLIB$$e389b425.todayHoldPriceVolume(<generated>)
+	at com.wdke.stock.web.StockController.todayHoldPriceVolume(StockController.java:46)
+	at com.wdke.stock.web.StockController$$FastClassBySpringCGLIB$$ee405586.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wdke.stock.web.StockController$$EnhancerBySpringCGLIB$$97e6b6b0.todayHoldPriceVolume(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:117)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:283)
+	... 112 common frames omitted
+13:56:17 [http-nio-8811-exec-6] INFO  c.w.s.h.WangyiStockApi  INFO [,,]   secondTodayData 获取失败stockCode=600221 
+13:56:59 [http-nio-8811-exec-10] ERROR c.w.s.u.OkHttpUtils ERROR [,,]   同步http GET 请求失败,url:http://img1.money.126.net/data/hs/time/today/0600221.json
+java.net.ConnectException: Failed to connect to img1.money.126.net/123.134.184.158:80
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:285)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:195)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:235)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:76)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:245)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:74)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:197)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:148)
+	at com.wdke.stock.utils.OkHttpUtils.httpGet(OkHttpUtils.java:61)
+	at com.wdke.stock.https.WangyiStockApi.secondTodayData(WangyiStockApi.java:49)
+	at com.wdke.stock.service.impl.StockServiceImpl.todayPriceVolume(StockServiceImpl.java:73)
+	at com.wdke.stock.service.impl.StockServiceImpl.lambda$todayHoldPriceVolume$0(StockServiceImpl.java:106)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.wdke.stock.service.impl.StockServiceImpl.todayHoldPriceVolume(StockServiceImpl.java:105)
+	at com.wdke.stock.service.impl.StockServiceImpl$$FastClassBySpringCGLIB$$f47faca2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.wdke.stock.common.config.aop.ActionAop.doAround(ActionAop.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wdke.stock.service.impl.StockServiceImpl$$EnhancerBySpringCGLIB$$e389b425.todayHoldPriceVolume(<generated>)
+	at com.wdke.stock.web.StockController.todayHoldPriceVolume(StockController.java:46)
+	at com.wdke.stock.web.StockController$$FastClassBySpringCGLIB$$ee405586.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wdke.stock.web.StockController$$EnhancerBySpringCGLIB$$97e6b6b0.todayHoldPriceVolume(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:117)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:283)
+	... 112 common frames omitted
+13:56:59 [http-nio-8811-exec-10] INFO  c.w.s.h.WangyiStockApi  INFO [,,]   secondTodayData 获取失败stockCode=600221 
+13:57:04 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:00:04 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:02
+14:00:04 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:04 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 13:59:54
+14:00:04 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:04 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:05 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:05 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:05 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:05 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:02
+14:00:05 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:05 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:05 [http-nio-8811-exec-9] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:00:03
+14:00:05 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：8A7DFF074B5028B9E1FFB100E6E54EE6】【duration：3415】
+14:02:04 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:02:35 [http-nio-8811-exec-6] ERROR c.w.s.u.OkHttpUtils ERROR [,,]   同步http GET 请求失败,url:http://img1.money.126.net/data/hs/time/today/0600151.json
+java.net.ConnectException: Failed to connect to img1.money.126.net/123.134.184.168:80
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:285)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:195)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:235)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:76)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:245)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:74)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:197)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:148)
+	at com.wdke.stock.utils.OkHttpUtils.httpGet(OkHttpUtils.java:61)
+	at com.wdke.stock.https.WangyiStockApi.secondTodayData(WangyiStockApi.java:49)
+	at com.wdke.stock.service.impl.StockServiceImpl.todayPriceVolume(StockServiceImpl.java:73)
+	at com.wdke.stock.service.impl.StockServiceImpl.lambda$todayHoldPriceVolume$0(StockServiceImpl.java:106)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.wdke.stock.service.impl.StockServiceImpl.todayHoldPriceVolume(StockServiceImpl.java:105)
+	at com.wdke.stock.service.impl.StockServiceImpl$$FastClassBySpringCGLIB$$f47faca2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.wdke.stock.common.config.aop.ActionAop.doAround(ActionAop.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wdke.stock.service.impl.StockServiceImpl$$EnhancerBySpringCGLIB$$e389b425.todayHoldPriceVolume(<generated>)
+	at com.wdke.stock.web.StockController.todayHoldPriceVolume(StockController.java:46)
+	at com.wdke.stock.web.StockController$$FastClassBySpringCGLIB$$ee405586.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wdke.stock.web.StockController$$EnhancerBySpringCGLIB$$97e6b6b0.todayHoldPriceVolume(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:117)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:283)
+	... 112 common frames omitted
+14:02:35 [http-nio-8811-exec-6] INFO  c.w.s.h.WangyiStockApi  INFO [,,]   secondTodayData 获取失败stockCode=600151 
+14:03:18 [http-nio-8811-exec-10] ERROR c.w.s.u.OkHttpUtils ERROR [,,]   同步http GET 请求失败,url:http://img1.money.126.net/data/hs/time/today/0600151.json
+java.net.ConnectException: Failed to connect to img1.money.126.net/123.134.184.168:80
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:285)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:195)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:235)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:108)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:76)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:245)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:74)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:100)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:197)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:148)
+	at com.wdke.stock.utils.OkHttpUtils.httpGet(OkHttpUtils.java:61)
+	at com.wdke.stock.https.WangyiStockApi.secondTodayData(WangyiStockApi.java:49)
+	at com.wdke.stock.service.impl.StockServiceImpl.todayPriceVolume(StockServiceImpl.java:73)
+	at com.wdke.stock.service.impl.StockServiceImpl.lambda$todayHoldPriceVolume$0(StockServiceImpl.java:106)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.wdke.stock.service.impl.StockServiceImpl.todayHoldPriceVolume(StockServiceImpl.java:105)
+	at com.wdke.stock.service.impl.StockServiceImpl$$FastClassBySpringCGLIB$$f47faca2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.wdke.stock.common.config.aop.ActionAop.doAround(ActionAop.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wdke.stock.service.impl.StockServiceImpl$$EnhancerBySpringCGLIB$$e389b425.todayHoldPriceVolume(<generated>)
+	at com.wdke.stock.web.StockController.todayHoldPriceVolume(StockController.java:46)
+	at com.wdke.stock.web.StockController$$FastClassBySpringCGLIB$$ee405586.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.wdke.stock.web.StockController$$EnhancerBySpringCGLIB$$97e6b6b0.todayHoldPriceVolume(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:117)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:283)
+	... 112 common frames omitted
+14:03:18 [http-nio-8811-exec-10] INFO  c.w.s.h.WangyiStockApi  INFO [,,]   secondTodayData 获取失败stockCode=600151 
+14:03:57 [Thread-29] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29d334c: startup date [Mon Nov 23 13:46:56 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2a898881
+14:03:57 [Thread-29] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Unregistering application STOCK with eureka with status DOWN
+14:03:57 [Thread-29] WARN  c.n.d.DiscoveryClient  WARN [,,]   Saw local status change event StatusChangeEvent [timestamp=1606111437490, current=DOWN, previous=UP]
+14:03:57 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811: registering service...
+14:03:57 [Thread-29] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Stopping beans in phase 0
+14:03:57 [Thread-29] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans on shutdown
+14:03:57 [Thread-29] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans
+14:03:57 [Thread-29] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Shutting down ExecutorService 'executor'
+14:03:57 [Thread-29] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} closed
+14:03:57 [Thread-29] INFO  c.n.d.DiscoveryClient  INFO [,,]   Shutting down DiscoveryClient ...
+14:03:57 [Thread-29] WARN  o.s.c.a.CommonAnnotationBeanPostProcessor  WARN [,,]   Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+14:03:57 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811 - registration status: 204
+14:04:04 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext  INFO [,,]   Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@35229f85: startup date [Mon Nov 23 14:04:04 CST 2020]; root of context hierarchy
+14:04:05 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder  WARN [,,]   For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+14:04:05 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:04:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d132a035] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:04:05 [main] INFO  c.w.s.StockApplication  INFO [,,]   The following profiles are active: dev
+14:04:05 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f8890c2: startup date [Mon Nov 23 14:04:05 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35229f85
+14:04:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  INFO [,,]   Multiple Spring Data modules found, entering strict repository configuration mode!
+14:04:06 [main] INFO  o.s.c.c.s.GenericScope  INFO [,,]   BeanFactory id=7c46808e-bc70-3495-b56e-286873128e16
+14:04:06 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:04:07 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5189d38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:04:07 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d132a035] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:04:07 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat initialized with port(s): 8811 (http)
+14:04:07 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Initializing ProtocolHandler ["http-nio-8811"]
+14:04:07 [main] INFO  o.a.c.c.StandardService  INFO [,,]   Starting service [Tomcat]
+14:04:07 [main] INFO  o.a.c.c.StandardEngine  INFO [,,]   Starting Servlet Engine: Apache Tomcat/8.5.34
+14:04:07 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener  INFO [,,]   The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wdke/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+14:04:07 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring embedded WebApplicationContext
+14:04:07 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader  INFO [,,]   Root WebApplicationContext: initialization completed in 2012 ms
+14:04:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'characterEncodingFilter' to: [/*]
+14:04:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:04:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:04:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'requestContextFilter' to: [/*]
+14:04:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'corsFilter' to: [/*]
+14:04:07 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  INFO [,,]   Servlet dispatcherServlet mapped to [/]
+14:04:08 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService
+14:04:08 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService 'executor'
+14:04:08 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+14:04:08 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:04:08 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+14:04:08 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:04:09 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  INFO [,,]   Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f8890c2: startup date [Mon Nov 23 14:04:05 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35229f85
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/buySell]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.buySell()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/day/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleDayToday()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/secconds/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleSeccondsToday()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/calculate]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.calculateToday()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{year}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.Integer)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{stockCode}/{type}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.String,java.lang.Integer)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/login],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.login(com.wdke.stock.common.model.LoginParam)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/wechat/check],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.wechatCheck(com.wdke.stock.web.args.WxUserInfoArgs)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/register],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.LoginController.register(com.wdke.stock.web.args.SysUserArgs)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockController.echartData(java.lang.Integer,java.lang.String)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockController.todayHoldPriceVolume()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockCurrentHoldPriceVo>> com.wdke.stock.web.StockCurrentHoldPriceController.list()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/detail/{id}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.Map<java.lang.String, java.lang.Object>> com.wdke.stock.web.StockCurrentHoldPriceController.detail(java.lang.Integer)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/snalysis/list],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<com.github.pagehelper.PageInfo<com.wdke.stock.storage.entity.StockInfoSnalysis>> com.wdke.stock.web.StockInfoController.stockInfoList(com.wdke.stock.web.args.StockInfoSnalysisArgs)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/search/{words}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockInfoVo>> com.wdke.stock.web.StockInfoController.searchStockInfoList(java.lang.String)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoDayController.buySellCont(java.lang.Integer,java.lang.String)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoDayController.buySellContHole()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDaysHole()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDays(java.lang.Integer,java.lang.String)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/complete/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.end(java.lang.Integer)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/add],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.add(com.wdke.stock.web.args.StockTradingAddArgs)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/remove/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.delete(java.lang.Integer)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.storage.entity.StockTrading>> com.wdke.stock.web.StockTradingController.list()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/undo/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.undo(java.lang.Integer)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock/mobile]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.mobile()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.index()
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:04:09 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:04:09 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:04:09 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:04:09 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver  INFO [,,]   Detected @ExceptionHandler methods in globalExceptionHandler
+14:04:09 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping  INFO [,,]   Adding welcome page template: index
+14:04:10 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration  WARN [,,]   spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Registering beans for JMX exposure on startup
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'dataSource' has been autodetected for JMX exposure
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'refreshScope' has been autodetected for JMX exposure
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'environmentManager' has been autodetected for JMX exposure
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5f8890c2,type=ConfigurationPropertiesRebinder]
+14:04:10 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+14:04:10 [main] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Starting beans in phase 0
+14:04:10 [main] INFO  o.s.c.n.e.InstanceInfoFactory  INFO [,,]   Setting initial instance status as: STARTING
+14:04:10 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Initializing Eureka in region us-east-1
+14:04:10 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON encoding codec LegacyJacksonJson
+14:04:10 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON decoding codec LegacyJacksonJson
+14:04:10 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML encoding codec XStreamXml
+14:04:10 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML decoding codec XStreamXml
+14:04:11 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Disable delta property : false
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Single vip registry refresh property : null
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Force full registry fetch : false
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application is null : false
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Registered Applications size is zero : true
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application version is -1: true
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Getting all instance registry info from the eureka server
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   The response status is 200
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Starting heartbeat executor: renew interval is: 30
+14:04:11 [main] INFO  c.n.d.InstanceInfoReplicator  INFO [,,]   InstanceInfoReplicator onDemand update allowed rate per min is 4
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Discovery Client initialized at timestamp 1606111451248 with initial instances count: 208
+14:04:11 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Registering application STOCK with eureka with status UP
+14:04:11 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Saw local status change event StatusChangeEvent [timestamp=1606111451262, current=UP, previous=STARTING]
+14:04:11 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811: registering service...
+14:04:11 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Starting ProtocolHandler ["http-nio-8811"]
+14:04:11 [main] INFO  o.a.t.u.n.NioSelectorPool  INFO [,,]   Using a shared selector for servlet write/read
+14:04:11 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811 - registration status: 204
+14:04:11 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat started on port(s): 8811 (http) with context path ''
+14:04:11 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration  INFO [,,]   Updating port to 8811
+14:04:11 [main] INFO  c.w.s.StockApplication  INFO [,,]   Started StockApplication in 6.795 seconds (JVM running for 7.696)
+14:04:11 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   starting
+14:04:11 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   Successful service end!
+14:09:11 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:23:09 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:24:21 [http-nio-8811-exec-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring FrameworkServlet 'dispatcherServlet'
+14:24:21 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization started
+14:24:21 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+14:24:21 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:24:22 [http-nio-8811-exec-1] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} inited
+14:24:37 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:24:43 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:24:53 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:24:54 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:24:56 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:24:57 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:24:58 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:25:05 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:25:06 [http-nio-8811-exec-10] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:25:07 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:25:07 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:25:17 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:25:20 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:27:26 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:27:36 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:27:36 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:28:09 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:30:34 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:31:31 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:31:34 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:32:40 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:32:52 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:33:09 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:33:26 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:33:49 [http-nio-8811-exec-10] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:37:54 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:37:57 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:37:59 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:38:04 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:38:43 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:41:02 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:41:05 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：1023FDA9CD6103462B5BD490CC8F2448】【duration：141816】
+14:42:29 [Thread-23] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f8890c2: startup date [Mon Nov 23 14:04:05 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35229f85
+14:42:29 [Thread-23] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Unregistering application STOCK with eureka with status DOWN
+14:42:29 [Thread-23] WARN  c.n.d.DiscoveryClient  WARN [,,]   Saw local status change event StatusChangeEvent [timestamp=1606113749266, current=DOWN, previous=UP]
+14:42:29 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811: registering service...
+14:42:29 [Thread-23] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Stopping beans in phase 0
+14:42:29 [Thread-23] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans on shutdown
+14:42:29 [Thread-23] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans
+14:42:29 [Thread-23] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Shutting down ExecutorService 'executor'
+14:42:29 [Thread-23] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} closed
+14:42:29 [Thread-23] INFO  c.n.d.DiscoveryClient  INFO [,,]   Shutting down DiscoveryClient ...
+14:42:29 [Thread-23] WARN  o.s.c.a.CommonAnnotationBeanPostProcessor  WARN [,,]   Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+14:42:29 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811 - registration status: 204
+14:42:34 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext  INFO [,,]   Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@17aad511: startup date [Mon Nov 23 14:42:34 CST 2020]; root of context hierarchy
+14:42:34 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder  WARN [,,]   For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+14:42:34 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:42:34 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e9f2c5ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:42:35 [main] INFO  c.w.s.StockApplication  INFO [,,]   The following profiles are active: dev
+14:42:35 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1654a892: startup date [Mon Nov 23 14:42:35 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@17aad511
+14:42:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  INFO [,,]   Multiple Spring Data modules found, entering strict repository configuration mode!
+14:42:35 [main] INFO  o.s.c.c.s.GenericScope  INFO [,,]   BeanFactory id=7c46808e-bc70-3495-b56e-286873128e16
+14:42:35 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:42:36 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdd8c2b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:42:36 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e9f2c5ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:42:36 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat initialized with port(s): 8811 (http)
+14:42:36 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Initializing ProtocolHandler ["http-nio-8811"]
+14:42:36 [main] INFO  o.a.c.c.StandardService  INFO [,,]   Starting service [Tomcat]
+14:42:36 [main] INFO  o.a.c.c.StandardEngine  INFO [,,]   Starting Servlet Engine: Apache Tomcat/8.5.34
+14:42:36 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener  INFO [,,]   The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wdke/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+14:42:36 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring embedded WebApplicationContext
+14:42:36 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader  INFO [,,]   Root WebApplicationContext: initialization completed in 1453 ms
+14:42:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'characterEncodingFilter' to: [/*]
+14:42:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:42:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:42:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'requestContextFilter' to: [/*]
+14:42:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'corsFilter' to: [/*]
+14:42:36 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  INFO [,,]   Servlet dispatcherServlet mapped to [/]
+14:42:37 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService
+14:42:37 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService 'executor'
+14:42:37 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+14:42:37 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:42:37 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+14:42:37 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:42:37 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  INFO [,,]   Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1654a892: startup date [Mon Nov 23 14:42:35 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@17aad511
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/buySell]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.buySell()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/day/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleDayToday()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/secconds/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleSeccondsToday()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/calculate]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.calculateToday()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{stockCode}/{type}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.String,java.lang.Integer)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{year}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.Integer)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/register],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.LoginController.register(com.wdke.stock.web.args.SysUserArgs)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/login],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.login(com.wdke.stock.common.model.LoginParam)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/wechat/check],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.wechatCheck(com.wdke.stock.web.args.WxUserInfoArgs)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockController.echartData(java.lang.Integer,java.lang.String)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockController.todayHoldPriceVolume()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockCurrentHoldPriceVo>> com.wdke.stock.web.StockCurrentHoldPriceController.list()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/detail/{id}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.Map<java.lang.String, java.lang.Object>> com.wdke.stock.web.StockCurrentHoldPriceController.detail(java.lang.Integer)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/snalysis/list],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<com.github.pagehelper.PageInfo<com.wdke.stock.storage.entity.StockInfoSnalysis>> com.wdke.stock.web.StockInfoController.stockInfoList(com.wdke.stock.web.args.StockInfoSnalysisArgs)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/search/{words}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockInfoVo>> com.wdke.stock.web.StockInfoController.searchStockInfoList(java.lang.String)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoDayController.buySellCont(java.lang.Integer,java.lang.String)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoDayController.buySellContHole()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDaysHole()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDays(java.lang.Integer,java.lang.String)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/add],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.add(com.wdke.stock.web.args.StockTradingAddArgs)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/remove/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.delete(java.lang.Integer)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.storage.entity.StockTrading>> com.wdke.stock.web.StockTradingController.list()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/undo/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.undo(java.lang.Integer)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/complete/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.end(java.lang.Integer)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.index()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock/mobile]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.mobile()
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:42:38 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:42:38 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:42:38 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:42:38 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver  INFO [,,]   Detected @ExceptionHandler methods in globalExceptionHandler
+14:42:38 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping  INFO [,,]   Adding welcome page template: index
+14:42:38 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration  WARN [,,]   spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Registering beans for JMX exposure on startup
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'dataSource' has been autodetected for JMX exposure
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'refreshScope' has been autodetected for JMX exposure
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'environmentManager' has been autodetected for JMX exposure
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1654a892,type=ConfigurationPropertiesRebinder]
+14:42:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+14:42:39 [main] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Starting beans in phase 0
+14:42:39 [main] INFO  o.s.c.n.e.InstanceInfoFactory  INFO [,,]   Setting initial instance status as: STARTING
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Initializing Eureka in region us-east-1
+14:42:39 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON encoding codec LegacyJacksonJson
+14:42:39 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON decoding codec LegacyJacksonJson
+14:42:39 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML encoding codec XStreamXml
+14:42:39 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML decoding codec XStreamXml
+14:42:39 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Disable delta property : false
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Single vip registry refresh property : null
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Force full registry fetch : false
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application is null : false
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Registered Applications size is zero : true
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application version is -1: true
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Getting all instance registry info from the eureka server
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   The response status is 200
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Starting heartbeat executor: renew interval is: 30
+14:42:39 [main] INFO  c.n.d.InstanceInfoReplicator  INFO [,,]   InstanceInfoReplicator onDemand update allowed rate per min is 4
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Discovery Client initialized at timestamp 1606113759885 with initial instances count: 208
+14:42:39 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Registering application STOCK with eureka with status UP
+14:42:39 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Saw local status change event StatusChangeEvent [timestamp=1606113759899, current=UP, previous=STARTING]
+14:42:39 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811: registering service...
+14:42:39 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Starting ProtocolHandler ["http-nio-8811"]
+14:42:39 [main] INFO  o.a.t.u.n.NioSelectorPool  INFO [,,]   Using a shared selector for servlet write/read
+14:42:39 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811 - registration status: 204
+14:42:39 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat started on port(s): 8811 (http) with context path ''
+14:42:39 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration  INFO [,,]   Updating port to 8811
+14:42:39 [main] INFO  c.w.s.StockApplication  INFO [,,]   Started StockApplication in 5.578 seconds (JVM running for 6.275)
+14:42:39 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   starting
+14:42:39 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   Successful service end!
+14:43:13 [http-nio-8811-exec-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring FrameworkServlet 'dispatcherServlet'
+14:43:13 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization started
+14:43:13 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+14:43:13 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:43:13 [http-nio-8811-exec-1] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} inited
+14:43:31 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:43:42 [http-nio-8811-exec-2] INFO  c.w.s.s.i.StockTradingServiceImpl  INFO [,,]   money=23250.0,rate=0.0,getCommission=5.0
+14:47:11 [DiscoveryClient-0] WARN  c.n.d.TimedSupervisorTask  WARN [,,]   task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:47:11 [DiscoveryClient-1] WARN  c.n.d.TimedSupervisorTask  WARN [,,]   task supervisor timed out
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+14:47:11 [Thread-20] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1654a892: startup date [Mon Nov 23 14:42:35 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@17aad511
+14:47:11 [Thread-20] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Unregistering application STOCK with eureka with status DOWN
+14:47:11 [Thread-20] WARN  c.n.d.DiscoveryClient  WARN [,,]   Saw local status change event StatusChangeEvent [timestamp=1606114031069, current=DOWN, previous=UP]
+14:47:11 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811: registering service...
+14:47:11 [Thread-20] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Stopping beans in phase 0
+14:47:11 [Thread-20] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans on shutdown
+14:47:11 [Thread-20] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans
+14:47:11 [Thread-20] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Shutting down ExecutorService 'executor'
+14:47:11 [Thread-20] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} closed
+14:47:11 [Thread-20] INFO  c.n.d.DiscoveryClient  INFO [,,]   Shutting down DiscoveryClient ...
+14:47:11 [Thread-20] WARN  o.s.c.a.CommonAnnotationBeanPostProcessor  WARN [,,]   Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+14:47:11 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811 - registration status: 204
+14:47:11 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：F29EADF3514386B30DDEB3EB6266A898】【duration：220126】
+14:47:15 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext  INFO [,,]   Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@b1712f3: startup date [Mon Nov 23 14:47:15 CST 2020]; root of context hierarchy
+14:47:15 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder  WARN [,,]   For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+14:47:15 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:47:15 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5e3efd79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:47:15 [main] INFO  c.w.s.StockApplication  INFO [,,]   The following profiles are active: dev
+14:47:15 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28c88600: startup date [Mon Nov 23 14:47:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@b1712f3
+14:47:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  INFO [,,]   Multiple Spring Data modules found, entering strict repository configuration mode!
+14:47:16 [main] INFO  o.s.c.c.s.GenericScope  INFO [,,]   BeanFactory id=7c46808e-bc70-3495-b56e-286873128e16
+14:47:16 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:47:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4224fa7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:47:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5e3efd79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:47:17 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat initialized with port(s): 8811 (http)
+14:47:17 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Initializing ProtocolHandler ["http-nio-8811"]
+14:47:17 [main] INFO  o.a.c.c.StandardService  INFO [,,]   Starting service [Tomcat]
+14:47:17 [main] INFO  o.a.c.c.StandardEngine  INFO [,,]   Starting Servlet Engine: Apache Tomcat/8.5.34
+14:47:17 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener  INFO [,,]   The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wdke/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+14:47:17 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring embedded WebApplicationContext
+14:47:17 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader  INFO [,,]   Root WebApplicationContext: initialization completed in 1478 ms
+14:47:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'characterEncodingFilter' to: [/*]
+14:47:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:47:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:47:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'requestContextFilter' to: [/*]
+14:47:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'corsFilter' to: [/*]
+14:47:17 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  INFO [,,]   Servlet dispatcherServlet mapped to [/]
+14:47:17 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService
+14:47:17 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService 'executor'
+14:47:18 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+14:47:18 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:47:18 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+14:47:18 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:47:18 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  INFO [,,]   Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28c88600: startup date [Mon Nov 23 14:47:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@b1712f3
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/buySell]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.buySell()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/day/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleDayToday()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/secconds/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleSeccondsToday()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/calculate]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.calculateToday()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{stockCode}/{type}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.String,java.lang.Integer)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{year}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.Integer)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/register],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.LoginController.register(com.wdke.stock.web.args.SysUserArgs)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/login],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.login(com.wdke.stock.common.model.LoginParam)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/wechat/check],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.wechatCheck(com.wdke.stock.web.args.WxUserInfoArgs)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockController.todayHoldPriceVolume()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockController.echartData(java.lang.Integer,java.lang.String)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockCurrentHoldPriceVo>> com.wdke.stock.web.StockCurrentHoldPriceController.list()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/detail/{id}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.Map<java.lang.String, java.lang.Object>> com.wdke.stock.web.StockCurrentHoldPriceController.detail(java.lang.Integer)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/search/{words}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockInfoVo>> com.wdke.stock.web.StockInfoController.searchStockInfoList(java.lang.String)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/snalysis/list],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<com.github.pagehelper.PageInfo<com.wdke.stock.storage.entity.StockInfoSnalysis>> com.wdke.stock.web.StockInfoController.stockInfoList(com.wdke.stock.web.args.StockInfoSnalysisArgs)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoDayController.buySellCont(java.lang.Integer,java.lang.String)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoDayController.buySellContHole()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDaysHole()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDays(java.lang.Integer,java.lang.String)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/add],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.add(com.wdke.stock.web.args.StockTradingAddArgs)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/remove/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.delete(java.lang.Integer)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.storage.entity.StockTrading>> com.wdke.stock.web.StockTradingController.list()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/undo/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.undo(java.lang.Integer)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/complete/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.end(java.lang.Integer)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.index()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock/mobile]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.mobile()
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:47:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:47:18 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:47:18 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:47:18 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver  INFO [,,]   Detected @ExceptionHandler methods in globalExceptionHandler
+14:47:18 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping  INFO [,,]   Adding welcome page template: index
+14:47:19 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration  WARN [,,]   spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Registering beans for JMX exposure on startup
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'dataSource' has been autodetected for JMX exposure
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'refreshScope' has been autodetected for JMX exposure
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'environmentManager' has been autodetected for JMX exposure
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=28c88600,type=ConfigurationPropertiesRebinder]
+14:47:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+14:47:19 [main] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Starting beans in phase 0
+14:47:19 [main] INFO  o.s.c.n.e.InstanceInfoFactory  INFO [,,]   Setting initial instance status as: STARTING
+14:47:19 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Initializing Eureka in region us-east-1
+14:47:19 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON encoding codec LegacyJacksonJson
+14:47:19 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON decoding codec LegacyJacksonJson
+14:47:20 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML encoding codec XStreamXml
+14:47:20 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML decoding codec XStreamXml
+14:47:20 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Disable delta property : false
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Single vip registry refresh property : null
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Force full registry fetch : false
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application is null : false
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Registered Applications size is zero : true
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application version is -1: true
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Getting all instance registry info from the eureka server
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   The response status is 200
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Starting heartbeat executor: renew interval is: 30
+14:47:20 [main] INFO  c.n.d.InstanceInfoReplicator  INFO [,,]   InstanceInfoReplicator onDemand update allowed rate per min is 4
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Discovery Client initialized at timestamp 1606114040393 with initial instances count: 208
+14:47:20 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Registering application STOCK with eureka with status UP
+14:47:20 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Saw local status change event StatusChangeEvent [timestamp=1606114040408, current=UP, previous=STARTING]
+14:47:20 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811: registering service...
+14:47:20 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Starting ProtocolHandler ["http-nio-8811"]
+14:47:20 [main] INFO  o.a.t.u.n.NioSelectorPool  INFO [,,]   Using a shared selector for servlet write/read
+14:47:20 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/192.168.0.108:stock:8811 - registration status: 204
+14:47:20 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat started on port(s): 8811 (http) with context path ''
+14:47:20 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration  INFO [,,]   Updating port to 8811
+14:47:20 [main] INFO  c.w.s.StockApplication  INFO [,,]   Started StockApplication in 5.65 seconds (JVM running for 6.318)
+14:47:20 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   starting
+14:47:20 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   Successful service end!
+14:47:31 [http-nio-8811-exec-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring FrameworkServlet 'dispatcherServlet'
+14:47:31 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization started
+14:47:31 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+14:47:31 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:47:31 [http-nio-8811-exec-1] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} inited
+14:47:32 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:47:36 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:47:36 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:47:38 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:47:38 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:47:39 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:47:54 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:47:56 [http-nio-8811-exec-8] INFO  c.w.s.s.i.StockTradingServiceImpl  INFO [,,]   money=23250.0,rate=3.0E-4,getCommission=6.98
+14:48:09 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：0453F1FF5D601B8F8ADBC9F7FE90C422】【duration：15487】
+14:48:10 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:48:13 [http-nio-8811-exec-10] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:48:13 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:11
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:09
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:14 [http-nio-8811-exec-10] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:12
+14:48:21 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:48:36 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:48:39 [http-nio-8811-exec-2] INFO  c.w.s.s.i.StockTradingServiceImpl  INFO [,,]   money=23498.0,rate=3.0E-4,getCommission=7.05
+14:48:43 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：AAB4F4B071FEEDC1DAA4BFFE6B115EF2】【duration：7082】
+14:48:44 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:48:46 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:48:46 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:44
+14:48:46 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:39
+14:48:46 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:45
+14:48:46 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:39
+14:48:46 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:45
+14:48:47 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:45
+14:48:47 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:45
+14:48:47 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:21
+14:48:47 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:45
+14:48:47 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:45
+14:48:47 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:45
+14:48:47 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:45
+14:48:49 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:48:57 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:48:57 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:53
+14:48:57 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:51
+14:48:57 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:54
+14:48:57 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:54
+14:48:57 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:54
+14:48:57 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:54
+14:48:58 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:54
+14:48:58 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:48
+14:48:58 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:54
+14:48:58 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:54
+14:48:58 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:51
+14:48:58 [http-nio-8811-exec-6] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-23 14:48:54
+14:49:19 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:49:20 [http-nio-8811-exec-8] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:49:54 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:49:54 [http-nio-8811-exec-9] INFO  c.w.s.s.i.StockTradingServiceImpl  INFO [,,]   money=16786.0,rate=3.0E-4,getCommission=5.04
+14:49:54 [http-nio-8811-exec-10] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+14:49:56 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+23:27:16 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration

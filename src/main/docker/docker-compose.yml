@@ -1,0 +1,27 @@
+
+version: "2" #版本号
+services:
+  stock: #服务名称（不是容器名）
+    image: "ascdc/jdk8"  #使用的镜像
+    ports:
+      - "8811:8811"  #暴露的端口信息和docker run -d -p 80:80 一样
+    restart: "always" #重启策略，能够使服务保持始终运行，生产环境推荐使用
+    container_name: stock #容器名称
+    volumes:
+      - /opt/docker/stock/stock-0.0.1-SNAPSHOT.jar:/stock.jar
+      - /opt/docker/stock/auto-code:/opt/auto-code/
+      - /opt/docker/stock/file:/script/
+      - /etc/localtime:/etc/localtime
+      - /etc/timezone:/etc/timezone
+      - /usr/share/zoneinfo:/usr/share/zoneinfo
+    entrypoint: java -Xms256m -Xmx256m -Dspring.profiles.active=prod -Djava.security.egd=file:/dev/./urandom -jar /stock.jar #启动容器后执行的命令
+
+    environment:    #设置东八时区上海时间
+      - SET_CONTAINER_TIMEZONE=true
+      - CONTAINER_TIMEZONE=Asia/Shanghai
+    networks:
+      wdk:
+        ipv4_address: 192.168.1.221
+networks:
+  wdk:
+    external: true

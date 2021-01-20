@@ -1,0 +1,438 @@
+10:42:56 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext  INFO [,,]   Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@13d9b21f: startup date [Fri Nov 27 10:42:56 CST 2020]; root of context hierarchy
+10:42:56 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder  WARN [,,]   For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+10:42:56 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:42:56 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3a6720ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:42:56 [main] INFO  c.w.s.StockApplication  INFO [,,]   The following profiles are active: dev
+10:42:56 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32fdec40: startup date [Fri Nov 27 10:42:56 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@13d9b21f
+10:42:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  INFO [,,]   Multiple Spring Data modules found, entering strict repository configuration mode!
+10:42:57 [main] INFO  o.s.c.c.s.GenericScope  INFO [,,]   BeanFactory id=7c46808e-bc70-3495-b56e-286873128e16
+10:42:57 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:42:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e4d1dcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:42:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3a6720ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:42:58 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat initialized with port(s): 8811 (http)
+10:42:58 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Initializing ProtocolHandler ["http-nio-8811"]
+10:42:58 [main] INFO  o.a.c.c.StandardService  INFO [,,]   Starting service [Tomcat]
+10:42:58 [main] INFO  o.a.c.c.StandardEngine  INFO [,,]   Starting Servlet Engine: Apache Tomcat/8.5.34
+10:42:58 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener  INFO [,,]   The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wdke/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10:42:58 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring embedded WebApplicationContext
+10:42:58 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader  INFO [,,]   Root WebApplicationContext: initialization completed in 1702 ms
+10:42:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'characterEncodingFilter' to: [/*]
+10:42:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:42:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:42:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'requestContextFilter' to: [/*]
+10:42:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'corsFilter' to: [/*]
+10:42:58 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  INFO [,,]   Servlet dispatcherServlet mapped to [/]
+10:42:59 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService
+10:42:59 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService 'executor'
+10:42:59 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+10:42:59 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:42:59 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+10:42:59 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:42:59 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  INFO [,,]   Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32fdec40: startup date [Fri Nov 27 10:42:56 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@13d9b21f
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/buySell]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.buySell()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/day/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleDayToday()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/secconds/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleSeccondsToday()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/calculate]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.calculateToday()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{stockCode}/{type}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.String,java.lang.Integer)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{year}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.Integer)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/register],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.LoginController.register(com.wdke.stock.web.args.SysUserArgs)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/login],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.login(com.wdke.stock.common.model.LoginParam)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/wechat/check],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.wechatCheck(com.wdke.stock.web.args.WxUserInfoArgs)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockController.todayHoldPriceVolume()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockController.echartData(java.lang.Integer,java.lang.String)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockCurrentHoldPriceVo>> com.wdke.stock.web.StockCurrentHoldPriceController.list()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/detail/{id}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.Map<java.lang.String, java.lang.Object>> com.wdke.stock.web.StockCurrentHoldPriceController.detail(java.lang.Integer)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/search/{words}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockInfoVo>> com.wdke.stock.web.StockInfoController.searchStockInfoList(java.lang.String)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/snalysis/list],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<com.github.pagehelper.PageInfo<com.wdke.stock.storage.entity.StockInfoSnalysis>> com.wdke.stock.web.StockInfoController.stockInfoList(com.wdke.stock.web.args.StockInfoSnalysisArgs)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoDayController.buySellCont(java.lang.Integer,java.lang.String)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoDayController.buySellContHole()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDaysHole()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDays(java.lang.Integer,java.lang.String)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/add],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.add(com.wdke.stock.web.args.StockTradingAddArgs)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/remove/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.delete(java.lang.Integer)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.storage.entity.StockTrading>> com.wdke.stock.web.StockTradingController.list()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/complete/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.end(java.lang.Integer)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/undo/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.undo(java.lang.Integer)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.index()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock/mobile]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.mobile()
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:43:00 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:43:00 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:43:00 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:43:00 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver  INFO [,,]   Detected @ExceptionHandler methods in globalExceptionHandler
+10:43:00 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping  INFO [,,]   Adding welcome page template: index
+10:43:00 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration  WARN [,,]   spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Registering beans for JMX exposure on startup
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'dataSource' has been autodetected for JMX exposure
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'refreshScope' has been autodetected for JMX exposure
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'environmentManager' has been autodetected for JMX exposure
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=32fdec40,type=ConfigurationPropertiesRebinder]
+10:43:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+10:43:01 [main] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Starting beans in phase 0
+10:43:01 [main] INFO  o.s.c.n.e.InstanceInfoFactory  INFO [,,]   Setting initial instance status as: STARTING
+10:43:01 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Initializing Eureka in region us-east-1
+10:43:01 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON encoding codec LegacyJacksonJson
+10:43:01 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON decoding codec LegacyJacksonJson
+10:43:02 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML encoding codec XStreamXml
+10:43:02 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML decoding codec XStreamXml
+10:43:02 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Disable delta property : false
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Single vip registry refresh property : null
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Force full registry fetch : false
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application is null : false
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Registered Applications size is zero : true
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application version is -1: true
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Getting all instance registry info from the eureka server
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   The response status is 200
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Starting heartbeat executor: renew interval is: 30
+10:43:02 [main] INFO  c.n.d.InstanceInfoReplicator  INFO [,,]   InstanceInfoReplicator onDemand update allowed rate per min is 4
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Discovery Client initialized at timestamp 1606444982628 with initial instances count: 208
+10:43:02 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Registering application STOCK with eureka with status UP
+10:43:02 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Saw local status change event StatusChangeEvent [timestamp=1606444982642, current=UP, previous=STARTING]
+10:43:02 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811: registering service...
+10:43:02 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Starting ProtocolHandler ["http-nio-8811"]
+10:43:02 [main] INFO  o.a.t.u.n.NioSelectorPool  INFO [,,]   Using a shared selector for servlet write/read
+10:43:02 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat started on port(s): 8811 (http) with context path ''
+10:43:02 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration  INFO [,,]   Updating port to 8811
+10:43:02 [main] INFO  c.w.s.StockApplication  INFO [,,]   Started StockApplication in 6.811 seconds (JVM running for 8.548)
+10:43:02 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   starting
+10:43:02 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   Successful service end!
+10:43:02 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811 - registration status: 204
+10:43:09 [http-nio-8811-exec-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:43:09 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization started
+10:43:09 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+10:43:09 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA2MTk2OTE0LCJ1c2VySWQiOjEsImlhdCI6MTYwNjExMDUxNCwianRpIjoiNTBiYWEwZTQtM2JjOS00MjhjLWFjYWItNjk5OTM5ODYyZDhlIiwidXNlcm5hbWUiOiJ3ZGtlIn0.HhV2z9t4-6JmVp4txk__d7o0MsCtmespL2tNzlshOk8
+10:43:09 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+10:43:09 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 不成功，准备token验证
+10:43:09 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   preHandle end  result->getRequestURI->【URI/stock/info/day/echart/hold】, 
+10:43:29 [http-nio-8811-exec-2] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   不需要登陆信息 requestURI->/stock/login
+10:43:29 [http-nio-8811-exec-2] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} inited
+10:43:30 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA2MTk2OTE0LCJ1c2VySWQiOjEsImlhdCI6MTYwNjExMDUxNCwianRpIjoiNTBiYWEwZTQtM2JjOS00MjhjLWFjYWItNjk5OTM5ODYyZDhlIiwidXNlcm5hbWUiOiJ3ZGtlIn0.HhV2z9t4-6JmVp4txk__d7o0MsCtmespL2tNzlshOk8
+10:43:30 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+10:43:30 [http-nio-8811-exec-3] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+10:43:35 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3ZGtlMjAxOTEyMTIiLCJjcmVhdG9yIjoid2RrZTIwMTkxMjEyIiwiZXhwIjoxNjA2MTk2OTE0LCJ1c2VySWQiOjEsImlhdCI6MTYwNjExMDUxNCwianRpIjoiNTBiYWEwZTQtM2JjOS00MjhjLWFjYWItNjk5OTM5ODYyZDhlIiwidXNlcm5hbWUiOiJ3ZGtlIn0.HhV2z9t4-6JmVp4txk__d7o0MsCtmespL2tNzlshOk8
+10:43:35 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=null
+10:43:35 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 获取用户信息 userId->1
+10:43:36 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:33
+10:43:36 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:33
+10:43:37 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:33
+10:43:37 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:33
+10:43:37 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:30
+10:43:37 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:33
+10:43:38 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:33
+10:43:38 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:21
+10:43:38 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:35
+10:43:39 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:33
+10:43:39 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:39
+10:43:39 [http-nio-8811-exec-4] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:43:39
+10:43:40 [http-nio-8811-exec-4] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：25E244E1330A40679689989CED0B7C58】【duration：4434】
+10:44:44 [Thread-24] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32fdec40: startup date [Fri Nov 27 10:42:56 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@13d9b21f
+10:44:44 [Thread-24] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Unregistering application STOCK with eureka with status DOWN
+10:44:44 [Thread-24] WARN  c.n.d.DiscoveryClient  WARN [,,]   Saw local status change event StatusChangeEvent [timestamp=1606445084401, current=DOWN, previous=UP]
+10:44:44 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811: registering service...
+10:44:44 [Thread-24] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Stopping beans in phase 0
+10:44:44 [Thread-24] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans on shutdown
+10:44:44 [Thread-24] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans
+10:44:44 [Thread-24] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Shutting down ExecutorService 'executor'
+10:44:44 [Thread-24] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} closed
+10:44:44 [Thread-24] INFO  c.n.d.DiscoveryClient  INFO [,,]   Shutting down DiscoveryClient ...
+10:44:44 [Thread-24] WARN  o.s.c.a.CommonAnnotationBeanPostProcessor  WARN [,,]   Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+10:44:44 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811 - registration status: 204
+10:44:48 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext  INFO [,,]   Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4879dfad: startup date [Fri Nov 27 10:44:48 CST 2020]; root of context hierarchy
+10:44:48 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder  WARN [,,]   For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+10:44:48 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:44:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60adaa58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:44:48 [main] INFO  c.w.s.StockApplication  INFO [,,]   The following profiles are active: dev
+10:44:48 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73d6d0c: startup date [Fri Nov 27 10:44:48 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4879dfad
+10:44:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  INFO [,,]   Multiple Spring Data modules found, entering strict repository configuration mode!
+10:44:49 [main] INFO  o.s.c.c.s.GenericScope  INFO [,,]   BeanFactory id=7c46808e-bc70-3495-b56e-286873128e16
+10:44:49 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:44:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4493a75b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:44:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60adaa58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:44:49 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat initialized with port(s): 8811 (http)
+10:44:49 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Initializing ProtocolHandler ["http-nio-8811"]
+10:44:49 [main] INFO  o.a.c.c.StandardService  INFO [,,]   Starting service [Tomcat]
+10:44:49 [main] INFO  o.a.c.c.StandardEngine  INFO [,,]   Starting Servlet Engine: Apache Tomcat/8.5.34
+10:44:49 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener  INFO [,,]   The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wdke/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10:44:49 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring embedded WebApplicationContext
+10:44:49 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader  INFO [,,]   Root WebApplicationContext: initialization completed in 1393 ms
+10:44:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'characterEncodingFilter' to: [/*]
+10:44:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:44:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:44:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'requestContextFilter' to: [/*]
+10:44:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'corsFilter' to: [/*]
+10:44:49 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  INFO [,,]   Servlet dispatcherServlet mapped to [/]
+10:44:50 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService
+10:44:50 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService 'executor'
+10:44:50 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+10:44:50 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:44:50 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+10:44:50 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:44:50 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  INFO [,,]   Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73d6d0c: startup date [Fri Nov 27 10:44:48 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4879dfad
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/buySell]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.buySell()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/day/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleDayToday()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/secconds/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleSeccondsToday()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/calculate]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.calculateToday()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{year}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.Integer)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{stockCode}/{type}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.String,java.lang.Integer)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/login],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.login(com.wdke.stock.common.model.LoginParam)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/wechat/check],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.wechatCheck(com.wdke.stock.web.args.WxUserInfoArgs)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/register],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.LoginController.register(com.wdke.stock.web.args.SysUserArgs)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockController.todayHoldPriceVolume()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockController.echartData(java.lang.Integer,java.lang.String)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/detail/{id}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.Map<java.lang.String, java.lang.Object>> com.wdke.stock.web.StockCurrentHoldPriceController.detail(java.lang.Integer)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockCurrentHoldPriceVo>> com.wdke.stock.web.StockCurrentHoldPriceController.list()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/search/{words}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockInfoVo>> com.wdke.stock.web.StockInfoController.searchStockInfoList(java.lang.String)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/snalysis/list],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<com.github.pagehelper.PageInfo<com.wdke.stock.storage.entity.StockInfoSnalysis>> com.wdke.stock.web.StockInfoController.stockInfoList(com.wdke.stock.web.args.StockInfoSnalysisArgs)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoDayController.buySellCont(java.lang.Integer,java.lang.String)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoDayController.buySellContHole()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDays(java.lang.Integer,java.lang.String)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDaysHole()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/undo/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.undo(java.lang.Integer)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/complete/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.end(java.lang.Integer)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/add],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.add(com.wdke.stock.web.args.StockTradingAddArgs)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/remove/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.delete(java.lang.Integer)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.storage.entity.StockTrading>> com.wdke.stock.web.StockTradingController.list()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock/mobile]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.mobile()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.index()
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:44:51 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:44:51 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:44:51 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:44:51 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver  INFO [,,]   Detected @ExceptionHandler methods in globalExceptionHandler
+10:44:51 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping  INFO [,,]   Adding welcome page template: index
+10:44:51 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration  WARN [,,]   spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Registering beans for JMX exposure on startup
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'dataSource' has been autodetected for JMX exposure
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'refreshScope' has been autodetected for JMX exposure
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'environmentManager' has been autodetected for JMX exposure
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=73d6d0c,type=ConfigurationPropertiesRebinder]
+10:44:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+10:44:52 [main] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Starting beans in phase 0
+10:44:52 [main] INFO  o.s.c.n.e.InstanceInfoFactory  INFO [,,]   Setting initial instance status as: STARTING
+10:44:52 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Initializing Eureka in region us-east-1
+10:44:52 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON encoding codec LegacyJacksonJson
+10:44:52 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON decoding codec LegacyJacksonJson
+10:44:52 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML encoding codec XStreamXml
+10:44:52 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML decoding codec XStreamXml
+10:44:52 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+10:44:52 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Disable delta property : false
+10:44:52 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Single vip registry refresh property : null
+10:44:52 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Force full registry fetch : false
+10:44:52 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application is null : false
+10:44:52 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Registered Applications size is zero : true
+10:44:52 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application version is -1: true
+10:44:52 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Getting all instance registry info from the eureka server
+10:44:53 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   The response status is 200
+10:44:53 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Starting heartbeat executor: renew interval is: 30
+10:44:53 [main] INFO  c.n.d.InstanceInfoReplicator  INFO [,,]   InstanceInfoReplicator onDemand update allowed rate per min is 4
+10:44:53 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Discovery Client initialized at timestamp 1606445093045 with initial instances count: 208
+10:44:53 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Registering application STOCK with eureka with status UP
+10:44:53 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Saw local status change event StatusChangeEvent [timestamp=1606445093059, current=UP, previous=STARTING]
+10:44:53 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811: registering service...
+10:44:53 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Starting ProtocolHandler ["http-nio-8811"]
+10:44:53 [main] INFO  o.a.t.u.n.NioSelectorPool  INFO [,,]   Using a shared selector for servlet write/read
+10:44:53 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat started on port(s): 8811 (http) with context path ''
+10:44:53 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration  INFO [,,]   Updating port to 8811
+10:44:53 [main] INFO  c.w.s.StockApplication  INFO [,,]   Started StockApplication in 5.242 seconds (JVM running for 5.809)
+10:44:53 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   starting
+10:44:53 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   Successful service end!
+10:44:53 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811 - registration status: 204
+10:44:58 [http-nio-8811-exec-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:44:58 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization started
+10:44:58 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+10:44:58 [http-nio-8811-exec-1] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} inited
+10:44:59 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:57
+10:45:00 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:57
+10:45:00 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:57
+10:45:00 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:54
+10:45:00 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:57
+10:45:00 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:57
+10:45:00 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:57
+10:45:01 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:57
+10:45:01 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:59
+10:45:01 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:44:57
+10:45:01 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:45:00
+10:45:01 [http-nio-8811-exec-1] INFO  c.w.s.h.SinaStockApi  INFO [,,]   sina data=2020-11-27 10:45:00
+10:45:01 [http-nio-8811-exec-1] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   超时报警短信【__trace_id：CABB9E9F0BB5F280AA797F4B10AA6198】【duration：3724】
+10:49:52 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+10:50:48 [Thread-10] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73d6d0c: startup date [Fri Nov 27 10:44:48 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4879dfad
+10:50:48 [Thread-10] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Unregistering application STOCK with eureka with status DOWN
+10:50:48 [Thread-10] WARN  c.n.d.DiscoveryClient  WARN [,,]   Saw local status change event StatusChangeEvent [timestamp=1606445448148, current=DOWN, previous=UP]
+10:50:48 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811: registering service...
+10:50:48 [Thread-10] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Stopping beans in phase 0
+10:50:48 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans on shutdown
+10:50:48 [Thread-10] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans
+10:50:48 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Shutting down ExecutorService 'executor'
+10:50:48 [Thread-10] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} closed
+10:50:48 [Thread-10] INFO  c.n.d.DiscoveryClient  INFO [,,]   Shutting down DiscoveryClient ...
+10:50:48 [Thread-10] WARN  o.s.c.a.CommonAnnotationBeanPostProcessor  WARN [,,]   Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+10:50:48 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811 - registration status: 204
+10:59:02 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext  INFO [,,]   Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@f316aeb: startup date [Fri Nov 27 10:59:02 CST 2020]; root of context hierarchy
+10:59:02 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder  WARN [,,]   For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+10:59:02 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:59:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e7979347] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:59:02 [main] INFO  c.w.s.StockApplication  INFO [,,]   The following profiles are active: dev
+10:59:02 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fae4d4a: startup date [Fri Nov 27 10:59:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@f316aeb
+10:59:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  INFO [,,]   Multiple Spring Data modules found, entering strict repository configuration mode!
+10:59:03 [main] INFO  o.s.c.c.s.GenericScope  INFO [,,]   BeanFactory id=7c46808e-bc70-3495-b56e-286873128e16
+10:59:03 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor  INFO [,,]   JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+10:59:03 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cb7d904a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:59:04 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  INFO [,,]   Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e7979347] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:59:04 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat initialized with port(s): 8811 (http)
+10:59:04 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Initializing ProtocolHandler ["http-nio-8811"]
+10:59:04 [main] INFO  o.a.c.c.StandardService  INFO [,,]   Starting service [Tomcat]
+10:59:04 [main] INFO  o.a.c.c.StandardEngine  INFO [,,]   Starting Servlet Engine: Apache Tomcat/8.5.34
+10:59:04 [localhost-startStop-1] INFO  o.a.c.c.AprLifecycleListener  INFO [,,]   The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wdke/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10:59:04 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring embedded WebApplicationContext
+10:59:04 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader  INFO [,,]   Root WebApplicationContext: initialization completed in 1867 ms
+10:59:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'characterEncodingFilter' to: [/*]
+10:59:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:59:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:59:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'requestContextFilter' to: [/*]
+10:59:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  INFO [,,]   Mapping filter: 'corsFilter' to: [/*]
+10:59:04 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  INFO [,,]   Servlet dispatcherServlet mapped to [/]
+10:59:05 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService
+10:59:05 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Initializing ExecutorService 'executor'
+10:59:05 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+10:59:05 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:59:05 [main] WARN  c.n.c.s.URLConfigurationSource  WARN [,,]   No URLs will be polled as dynamic configuration sources.
+10:59:05 [main] INFO  c.n.c.s.URLConfigurationSource  INFO [,,]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:59:06 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  INFO [,,]   Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fae4d4a: startup date [Fri Nov 27 10:59:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@f316aeb
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/day/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleDayToday()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{year}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.Integer)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/{stockCode}/{type}]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleYear(java.lang.String,java.lang.Integer)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/buySell]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.buySell()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/secconds/today]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.handleSeccondsToday()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/handle/calculate]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.HandleController.calculateToday()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/register],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.LoginController.register(com.wdke.stock.web.args.SysUserArgs)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/login],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.login(com.wdke.stock.common.model.LoginParam)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/wechat/check],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.String> com.wdke.stock.web.LoginController.wechatCheck(com.wdke.stock.web.args.WxUserInfoArgs)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockController.echartData(java.lang.Integer,java.lang.String)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockController.todayHoldPriceVolume()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/detail/{id}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.Map<java.lang.String, java.lang.Object>> com.wdke.stock.web.StockCurrentHoldPriceController.detail(java.lang.Integer)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/current/hold/price/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockCurrentHoldPriceVo>> com.wdke.stock.web.StockCurrentHoldPriceController.list()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/snalysis/list],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<com.github.pagehelper.PageInfo<com.wdke.stock.storage.entity.StockInfoSnalysis>> com.wdke.stock.web.StockInfoController.stockInfoList(com.wdke.stock.web.args.StockInfoSnalysisArgs)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/search/{words}]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockInfoVo>> com.wdke.stock.web.StockInfoController.searchStockInfoList(java.lang.String)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoDayController.buySellCont(java.lang.Integer,java.lang.String)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/day/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoDayController.buySellContHole()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/{type}/{stockCode}]}" onto public com.wdke.stock.common.model.ResponseVo<com.wdke.stock.web.vo.StockEchartVo> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDays(java.lang.Integer,java.lang.String)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/info/secconds/echart/hold]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.web.vo.StockEchartVo>> com.wdke.stock.web.StockInfoSeccondsController.comparingThreeDaysHole()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/undo/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.undo(java.lang.Integer)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/add],methods=[POST]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.add(com.wdke.stock.web.args.StockTradingAddArgs)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/remove/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.delete(java.lang.Integer)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/list]}" onto public com.wdke.stock.common.model.ResponseVo<java.util.List<com.wdke.stock.storage.entity.StockTrading>> com.wdke.stock.web.StockTradingController.list()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/stock/trading/complete/{id}],methods=[GET]}" onto public com.wdke.stock.common.model.ResponseVo<java.lang.Integer> com.wdke.stock.web.StockTradingController.end(java.lang.Integer)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.index()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/page/stock/mobile]}" onto public java.lang.String com.wdke.stock.web.pages.PageStockController.mobile()
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:59:06 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  INFO [,,]   Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:59:06 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:59:06 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  INFO [,,]   Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:59:06 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver  INFO [,,]   Detected @ExceptionHandler methods in globalExceptionHandler
+10:59:06 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping  INFO [,,]   Adding welcome page template: index
+10:59:07 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration  WARN [,,]   spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Registering beans for JMX exposure on startup
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'dataSource' has been autodetected for JMX exposure
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'refreshScope' has been autodetected for JMX exposure
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Bean with name 'environmentManager' has been autodetected for JMX exposure
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7fae4d4a,type=ConfigurationPropertiesRebinder]
+10:59:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+10:59:07 [main] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Starting beans in phase 0
+10:59:07 [main] INFO  o.s.c.n.e.InstanceInfoFactory  INFO [,,]   Setting initial instance status as: STARTING
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Initializing Eureka in region us-east-1
+10:59:08 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON encoding codec LegacyJacksonJson
+10:59:08 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using JSON decoding codec LegacyJacksonJson
+10:59:08 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML encoding codec XStreamXml
+10:59:08 [main] INFO  c.n.d.p.DiscoveryJerseyProvider  INFO [,,]   Using XML decoding codec XStreamXml
+10:59:08 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Disable delta property : false
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Single vip registry refresh property : null
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Force full registry fetch : false
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application is null : false
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Registered Applications size is zero : true
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Application version is -1: true
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Getting all instance registry info from the eureka server
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   The response status is 200
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Starting heartbeat executor: renew interval is: 30
+10:59:08 [main] INFO  c.n.d.InstanceInfoReplicator  INFO [,,]   InstanceInfoReplicator onDemand update allowed rate per min is 4
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Discovery Client initialized at timestamp 1606445948689 with initial instances count: 208
+10:59:08 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Registering application STOCK with eureka with status UP
+10:59:08 [main] INFO  c.n.d.DiscoveryClient  INFO [,,]   Saw local status change event StatusChangeEvent [timestamp=1606445948703, current=UP, previous=STARTING]
+10:59:08 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811: registering service...
+10:59:08 [main] INFO  o.a.c.h.Http11NioProtocol  INFO [,,]   Starting ProtocolHandler ["http-nio-8811"]
+10:59:08 [main] INFO  o.a.t.u.n.NioSelectorPool  INFO [,,]   Using a shared selector for servlet write/read
+10:59:08 [main] INFO  o.s.b.w.e.t.TomcatWebServer  INFO [,,]   Tomcat started on port(s): 8811 (http) with context path ''
+10:59:08 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration  INFO [,,]   Updating port to 8811
+10:59:08 [main] INFO  c.w.s.StockApplication  INFO [,,]   Started StockApplication in 6.831 seconds (JVM running for 7.475)
+10:59:08 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   starting
+10:59:08 [main] INFO  c.w.s.h.AfterServiceStarted  INFO [,,]   Successful service end!
+10:59:08 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811 - registration status: 204
+10:59:16 [http-nio-8811-exec-1] INFO  o.a.c.c.C.[.[.[/]  INFO [,,]   Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:59:16 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization started
+10:59:16 [http-nio-8811-exec-1] INFO  o.s.w.s.DispatcherServlet  INFO [,,]   FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+10:59:16 [http-nio-8811-exec-1] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} inited
+11:01:52 [http-nio-8811-exec-2] INFO  c.w.s.s.i.StockHoldingsServiceImpl  INFO [,,]   list 数据列表为空
+11:04:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:09:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:14:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:17:15 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+11:17:16 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过Wechat-Validate-Token 不成功，准备sission验证 token=S80vntAlw3N9h7UjmNMCWA==
+11:17:16 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过sission 不成功，准备token验证
+11:17:16 [http-nio-8811-exec-5] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   preHandle end  result->getRequestURI->【URI//stock/info/snalysis/list】, 
+11:17:16 [http-nio-8811-exec-6] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   不需要登陆信息 requestURI->//stock/wechat/check
+11:17:17 [http-nio-8811-exec-7] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+11:19:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:20:20 [http-nio-8811-exec-9] INFO  c.w.s.w.i.TokenInterceptor  INFO [,,]   通过T-Validate-Token 不成功，准备Wechat-Validate-Token验证 token=null
+11:24:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:29:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:34:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:39:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:44:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:49:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:54:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+11:59:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:04:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:09:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:14:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:19:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:24:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:29:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:34:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:39:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:44:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:49:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:54:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+12:59:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:04:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:09:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:14:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:19:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:24:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:29:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:34:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:39:08 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver  INFO [,,]   Resolving eureka endpoints via configuration
+13:39:58 [Thread-23] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  INFO [,,]   Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fae4d4a: startup date [Fri Nov 27 10:59:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@f316aeb
+13:39:58 [Thread-23] INFO  o.s.c.n.e.s.EurekaServiceRegistry  INFO [,,]   Unregistering application STOCK with eureka with status DOWN
+13:39:58 [Thread-23] WARN  c.n.d.DiscoveryClient  WARN [,,]   Saw local status change event StatusChangeEvent [timestamp=1606455598131, current=DOWN, previous=UP]
+13:39:58 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811: registering service...
+13:39:58 [Thread-23] INFO  o.s.c.s.DefaultLifecycleProcessor  INFO [,,]   Stopping beans in phase 0
+13:39:58 [Thread-23] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans on shutdown
+13:39:58 [Thread-23] INFO  o.s.j.e.a.AnnotationMBeanExporter  INFO [,,]   Unregistering JMX-exposed beans
+13:39:58 [Thread-23] INFO  o.s.s.c.ThreadPoolTaskExecutor  INFO [,,]   Shutting down ExecutorService 'executor'
+13:39:58 [Thread-23] INFO  c.a.d.p.DruidDataSource  INFO [,,]   {dataSource-1} closed
+13:39:58 [Thread-23] INFO  c.n.d.DiscoveryClient  INFO [,,]   Shutting down DiscoveryClient ...
+13:39:58 [Thread-23] WARN  o.s.c.a.CommonAnnotationBeanPostProcessor  WARN [,,]   Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+13:39:58 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient  INFO [,,]   DiscoveryClient_STOCK/10.252.177.110:stock:8811 - registration status: 204

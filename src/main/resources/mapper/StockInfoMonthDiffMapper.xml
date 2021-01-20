@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wdke.stock.storage.dao.StockInfoMonthDiffMapper">
+  <resultMap id="BaseResultMap" type="com.wdke.stock.storage.entity.StockInfoMonthDiff">
+    <id column="stock_code" jdbcType="VARCHAR" property="stockCode" />
+    <id column="stock_type" jdbcType="INTEGER" property="stockType" />
+    <id column="year" jdbcType="INTEGER" property="year" />
+    <id column="month" jdbcType="INTEGER" property="month" />
+    <result column="stock_name" jdbcType="VARCHAR" property="stockName" />
+    <result column="diff" jdbcType="REAL" property="diff" />
+    <result column="last_month_diff_open" jdbcType="REAL" property="lastMonthDiffOpen" />
+    <result column="last_month_diff_high" jdbcType="REAL" property="lastMonthDiffHigh" />
+    <result column="last_month_diff_low" jdbcType="REAL" property="lastMonthDiffLow" />
+    <result column="last_month_diff_close" jdbcType="REAL" property="lastMonthDiffClose" />
+    <result column="last_month_diff_buy_money" jdbcType="REAL" property="lastMonthDiffBuyMoney" />
+    <result column="last_month_diff_fail_money" jdbcType="REAL" property="lastMonthDiffFailMoney" />
+    <result column="last_month_diff_net_profit" jdbcType="REAL" property="lastMonthDiffNetProfit" />
+    <result column="last_year_diff_open" jdbcType="REAL" property="lastYearDiffOpen" />
+    <result column="last_year_diff_high" jdbcType="REAL" property="lastYearDiffHigh" />
+    <result column="last_year_diff_low" jdbcType="REAL" property="lastYearDiffLow" />
+    <result column="last_year_diff_close" jdbcType="REAL" property="lastYearDiffClose" />
+    <result column="last_year_diff_buy_money" jdbcType="REAL" property="lastYearDiffBuyMoney" />
+    <result column="last_year_diff_fail_money" jdbcType="REAL" property="lastYearDiffFailMoney" />
+    <result column="last_year_diff_net_profit" jdbcType="REAL" property="lastYearDiffNetProfit" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    stock_code, stock_type, year, month, stock_name, diff, last_month_diff_open, last_month_diff_high, 
+    last_month_diff_low, last_month_diff_close, last_month_diff_buy_money, last_month_diff_fail_money, 
+    last_month_diff_net_profit, last_year_diff_open, last_year_diff_high, last_year_diff_low, 
+    last_year_diff_close, last_year_diff_buy_money, last_year_diff_fail_money, last_year_diff_net_profit, 
+    create_date, update_date
+  </sql>
+  <select id="selectByExample" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiffExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from stock_info_month_diff
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="offset != null and limit != null">
+      limit ${offset}, ${limit}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiffKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from stock_info_month_diff
+    where stock_code = #{stockCode,jdbcType=VARCHAR}
+      and stock_type = #{stockType,jdbcType=INTEGER}
+      and year = #{year,jdbcType=INTEGER}
+      and month = #{month,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiffKey">
+    delete from stock_info_month_diff
+    where stock_code = #{stockCode,jdbcType=VARCHAR}
+      and stock_type = #{stockType,jdbcType=INTEGER}
+      and year = #{year,jdbcType=INTEGER}
+      and month = #{month,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiffExample">
+    delete from stock_info_month_diff
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiff">
+    insert into stock_info_month_diff (stock_code, stock_type, year, 
+      month, stock_name, diff, 
+      last_month_diff_open, last_month_diff_high, last_month_diff_low, 
+      last_month_diff_close, last_month_diff_buy_money, last_month_diff_fail_money, 
+      last_month_diff_net_profit, last_year_diff_open, last_year_diff_high, 
+      last_year_diff_low, last_year_diff_close, last_year_diff_buy_money, 
+      last_year_diff_fail_money, last_year_diff_net_profit, 
+      create_date, update_date)
+    values (#{stockCode,jdbcType=VARCHAR}, #{stockType,jdbcType=INTEGER}, #{year,jdbcType=INTEGER}, 
+      #{month,jdbcType=INTEGER}, #{stockName,jdbcType=VARCHAR}, #{diff,jdbcType=REAL}, 
+      #{lastMonthDiffOpen,jdbcType=REAL}, #{lastMonthDiffHigh,jdbcType=REAL}, #{lastMonthDiffLow,jdbcType=REAL}, 
+      #{lastMonthDiffClose,jdbcType=REAL}, #{lastMonthDiffBuyMoney,jdbcType=REAL}, #{lastMonthDiffFailMoney,jdbcType=REAL}, 
+      #{lastMonthDiffNetProfit,jdbcType=REAL}, #{lastYearDiffOpen,jdbcType=REAL}, #{lastYearDiffHigh,jdbcType=REAL}, 
+      #{lastYearDiffLow,jdbcType=REAL}, #{lastYearDiffClose,jdbcType=REAL}, #{lastYearDiffBuyMoney,jdbcType=REAL}, 
+      #{lastYearDiffFailMoney,jdbcType=REAL}, #{lastYearDiffNetProfit,jdbcType=REAL}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiff">
+    insert into stock_info_month_diff
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="stockCode != null">
+        stock_code,
+      </if>
+      <if test="stockType != null">
+        stock_type,
+      </if>
+      <if test="year != null">
+        year,
+      </if>
+      <if test="month != null">
+        month,
+      </if>
+      <if test="stockName != null">
+        stock_name,
+      </if>
+      <if test="diff != null">
+        diff,
+      </if>
+      <if test="lastMonthDiffOpen != null">
+        last_month_diff_open,
+      </if>
+      <if test="lastMonthDiffHigh != null">
+        last_month_diff_high,
+      </if>
+      <if test="lastMonthDiffLow != null">
+        last_month_diff_low,
+      </if>
+      <if test="lastMonthDiffClose != null">
+        last_month_diff_close,
+      </if>
+      <if test="lastMonthDiffBuyMoney != null">
+        last_month_diff_buy_money,
+      </if>
+      <if test="lastMonthDiffFailMoney != null">
+        last_month_diff_fail_money,
+      </if>
+      <if test="lastMonthDiffNetProfit != null">
+        last_month_diff_net_profit,
+      </if>
+      <if test="lastYearDiffOpen != null">
+        last_year_diff_open,
+      </if>
+      <if test="lastYearDiffHigh != null">
+        last_year_diff_high,
+      </if>
+      <if test="lastYearDiffLow != null">
+        last_year_diff_low,
+      </if>
+      <if test="lastYearDiffClose != null">
+        last_year_diff_close,
+      </if>
+      <if test="lastYearDiffBuyMoney != null">
+        last_year_diff_buy_money,
+      </if>
+      <if test="lastYearDiffFailMoney != null">
+        last_year_diff_fail_money,
+      </if>
+      <if test="lastYearDiffNetProfit != null">
+        last_year_diff_net_profit,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="stockCode != null">
+        #{stockCode,jdbcType=VARCHAR},
+      </if>
+      <if test="stockType != null">
+        #{stockType,jdbcType=INTEGER},
+      </if>
+      <if test="year != null">
+        #{year,jdbcType=INTEGER},
+      </if>
+      <if test="month != null">
+        #{month,jdbcType=INTEGER},
+      </if>
+      <if test="stockName != null">
+        #{stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="diff != null">
+        #{diff,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffOpen != null">
+        #{lastMonthDiffOpen,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffHigh != null">
+        #{lastMonthDiffHigh,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffLow != null">
+        #{lastMonthDiffLow,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffClose != null">
+        #{lastMonthDiffClose,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffBuyMoney != null">
+        #{lastMonthDiffBuyMoney,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffFailMoney != null">
+        #{lastMonthDiffFailMoney,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffNetProfit != null">
+        #{lastMonthDiffNetProfit,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffOpen != null">
+        #{lastYearDiffOpen,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffHigh != null">
+        #{lastYearDiffHigh,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffLow != null">
+        #{lastYearDiffLow,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffClose != null">
+        #{lastYearDiffClose,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffBuyMoney != null">
+        #{lastYearDiffBuyMoney,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffFailMoney != null">
+        #{lastYearDiffFailMoney,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffNetProfit != null">
+        #{lastYearDiffNetProfit,jdbcType=REAL},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiffExample" resultType="java.lang.Long">
+    select count(*) from stock_info_month_diff
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update stock_info_month_diff
+    <set>
+      <if test="record.stockCode != null">
+        stock_code = #{record.stockCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.stockType != null">
+        stock_type = #{record.stockType,jdbcType=INTEGER},
+      </if>
+      <if test="record.year != null">
+        year = #{record.year,jdbcType=INTEGER},
+      </if>
+      <if test="record.month != null">
+        month = #{record.month,jdbcType=INTEGER},
+      </if>
+      <if test="record.stockName != null">
+        stock_name = #{record.stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.diff != null">
+        diff = #{record.diff,jdbcType=REAL},
+      </if>
+      <if test="record.lastMonthDiffOpen != null">
+        last_month_diff_open = #{record.lastMonthDiffOpen,jdbcType=REAL},
+      </if>
+      <if test="record.lastMonthDiffHigh != null">
+        last_month_diff_high = #{record.lastMonthDiffHigh,jdbcType=REAL},
+      </if>
+      <if test="record.lastMonthDiffLow != null">
+        last_month_diff_low = #{record.lastMonthDiffLow,jdbcType=REAL},
+      </if>
+      <if test="record.lastMonthDiffClose != null">
+        last_month_diff_close = #{record.lastMonthDiffClose,jdbcType=REAL},
+      </if>
+      <if test="record.lastMonthDiffBuyMoney != null">
+        last_month_diff_buy_money = #{record.lastMonthDiffBuyMoney,jdbcType=REAL},
+      </if>
+      <if test="record.lastMonthDiffFailMoney != null">
+        last_month_diff_fail_money = #{record.lastMonthDiffFailMoney,jdbcType=REAL},
+      </if>
+      <if test="record.lastMonthDiffNetProfit != null">
+        last_month_diff_net_profit = #{record.lastMonthDiffNetProfit,jdbcType=REAL},
+      </if>
+      <if test="record.lastYearDiffOpen != null">
+        last_year_diff_open = #{record.lastYearDiffOpen,jdbcType=REAL},
+      </if>
+      <if test="record.lastYearDiffHigh != null">
+        last_year_diff_high = #{record.lastYearDiffHigh,jdbcType=REAL},
+      </if>
+      <if test="record.lastYearDiffLow != null">
+        last_year_diff_low = #{record.lastYearDiffLow,jdbcType=REAL},
+      </if>
+      <if test="record.lastYearDiffClose != null">
+        last_year_diff_close = #{record.lastYearDiffClose,jdbcType=REAL},
+      </if>
+      <if test="record.lastYearDiffBuyMoney != null">
+        last_year_diff_buy_money = #{record.lastYearDiffBuyMoney,jdbcType=REAL},
+      </if>
+      <if test="record.lastYearDiffFailMoney != null">
+        last_year_diff_fail_money = #{record.lastYearDiffFailMoney,jdbcType=REAL},
+      </if>
+      <if test="record.lastYearDiffNetProfit != null">
+        last_year_diff_net_profit = #{record.lastYearDiffNetProfit,jdbcType=REAL},
+      </if>
+      <if test="record.createDate != null">
+        create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateDate != null">
+        update_date = #{record.updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateSql != null" >
+        ${record.updateSql},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update stock_info_month_diff
+    set stock_code = #{record.stockCode,jdbcType=VARCHAR},
+      stock_type = #{record.stockType,jdbcType=INTEGER},
+      year = #{record.year,jdbcType=INTEGER},
+      month = #{record.month,jdbcType=INTEGER},
+      stock_name = #{record.stockName,jdbcType=VARCHAR},
+      diff = #{record.diff,jdbcType=REAL},
+      last_month_diff_open = #{record.lastMonthDiffOpen,jdbcType=REAL},
+      last_month_diff_high = #{record.lastMonthDiffHigh,jdbcType=REAL},
+      last_month_diff_low = #{record.lastMonthDiffLow,jdbcType=REAL},
+      last_month_diff_close = #{record.lastMonthDiffClose,jdbcType=REAL},
+      last_month_diff_buy_money = #{record.lastMonthDiffBuyMoney,jdbcType=REAL},
+      last_month_diff_fail_money = #{record.lastMonthDiffFailMoney,jdbcType=REAL},
+      last_month_diff_net_profit = #{record.lastMonthDiffNetProfit,jdbcType=REAL},
+      last_year_diff_open = #{record.lastYearDiffOpen,jdbcType=REAL},
+      last_year_diff_high = #{record.lastYearDiffHigh,jdbcType=REAL},
+      last_year_diff_low = #{record.lastYearDiffLow,jdbcType=REAL},
+      last_year_diff_close = #{record.lastYearDiffClose,jdbcType=REAL},
+      last_year_diff_buy_money = #{record.lastYearDiffBuyMoney,jdbcType=REAL},
+      last_year_diff_fail_money = #{record.lastYearDiffFailMoney,jdbcType=REAL},
+      last_year_diff_net_profit = #{record.lastYearDiffNetProfit,jdbcType=REAL},
+      create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      update_date = #{record.updateDate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiff">
+    update stock_info_month_diff
+    <set>
+      <if test="stockName != null">
+        stock_name = #{stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="diff != null">
+        diff = #{diff,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffOpen != null">
+        last_month_diff_open = #{lastMonthDiffOpen,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffHigh != null">
+        last_month_diff_high = #{lastMonthDiffHigh,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffLow != null">
+        last_month_diff_low = #{lastMonthDiffLow,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffClose != null">
+        last_month_diff_close = #{lastMonthDiffClose,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffBuyMoney != null">
+        last_month_diff_buy_money = #{lastMonthDiffBuyMoney,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffFailMoney != null">
+        last_month_diff_fail_money = #{lastMonthDiffFailMoney,jdbcType=REAL},
+      </if>
+      <if test="lastMonthDiffNetProfit != null">
+        last_month_diff_net_profit = #{lastMonthDiffNetProfit,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffOpen != null">
+        last_year_diff_open = #{lastYearDiffOpen,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffHigh != null">
+        last_year_diff_high = #{lastYearDiffHigh,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffLow != null">
+        last_year_diff_low = #{lastYearDiffLow,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffClose != null">
+        last_year_diff_close = #{lastYearDiffClose,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffBuyMoney != null">
+        last_year_diff_buy_money = #{lastYearDiffBuyMoney,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffFailMoney != null">
+        last_year_diff_fail_money = #{lastYearDiffFailMoney,jdbcType=REAL},
+      </if>
+      <if test="lastYearDiffNetProfit != null">
+        last_year_diff_net_profit = #{lastYearDiffNetProfit,jdbcType=REAL},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where stock_code = #{stockCode,jdbcType=VARCHAR}
+      and stock_type = #{stockType,jdbcType=INTEGER}
+      and year = #{year,jdbcType=INTEGER}
+      and month = #{month,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiff">
+    update stock_info_month_diff
+    set stock_name = #{stockName,jdbcType=VARCHAR},
+      diff = #{diff,jdbcType=REAL},
+      last_month_diff_open = #{lastMonthDiffOpen,jdbcType=REAL},
+      last_month_diff_high = #{lastMonthDiffHigh,jdbcType=REAL},
+      last_month_diff_low = #{lastMonthDiffLow,jdbcType=REAL},
+      last_month_diff_close = #{lastMonthDiffClose,jdbcType=REAL},
+      last_month_diff_buy_money = #{lastMonthDiffBuyMoney,jdbcType=REAL},
+      last_month_diff_fail_money = #{lastMonthDiffFailMoney,jdbcType=REAL},
+      last_month_diff_net_profit = #{lastMonthDiffNetProfit,jdbcType=REAL},
+      last_year_diff_open = #{lastYearDiffOpen,jdbcType=REAL},
+      last_year_diff_high = #{lastYearDiffHigh,jdbcType=REAL},
+      last_year_diff_low = #{lastYearDiffLow,jdbcType=REAL},
+      last_year_diff_close = #{lastYearDiffClose,jdbcType=REAL},
+      last_year_diff_buy_money = #{lastYearDiffBuyMoney,jdbcType=REAL},
+      last_year_diff_fail_money = #{lastYearDiffFailMoney,jdbcType=REAL},
+      last_year_diff_net_profit = #{lastYearDiffNetProfit,jdbcType=REAL},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP}
+    where stock_code = #{stockCode,jdbcType=VARCHAR}
+      and stock_type = #{stockType,jdbcType=INTEGER}
+      and year = #{year,jdbcType=INTEGER}
+      and month = #{month,jdbcType=INTEGER}
+  </update>
+  <select id="selectByExampleWithRowbounds" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiffExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from stock_info_month_diff
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="sumByExample" parameterType="com.wdke.stock.storage.entity.StockInfoMonthDiffExample" resultType="long" >
+    select sum(${sumCol}) from stock_info_month_diff
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <insert id="batchInsert">
+    <if test="items.get(0) != null">
+            insert into stock_info_month_diff  (stock_code, stock_type, year, 
+        month, stock_name, diff, 
+        last_month_diff_open, last_month_diff_high, last_month_diff_low, 
+        last_month_diff_close, last_month_diff_buy_money, last_month_diff_fail_money, 
+        last_month_diff_net_profit, last_year_diff_open, last_year_diff_high, 
+        last_year_diff_low, last_year_diff_close, last_year_diff_buy_money, 
+        last_year_diff_fail_money, last_year_diff_net_profit, 
+        create_date, update_date)
+      values
+      <foreach collection="items" item="item" index="index" separator=",">
+      (#{item.stockCode,jdbcType=VARCHAR}, #{item.stockType,jdbcType=INTEGER}, #{item.year,jdbcType=INTEGER}, 
+        #{item.month,jdbcType=INTEGER}, #{item.stockName,jdbcType=VARCHAR}, #{item.diff,jdbcType=REAL}, 
+        #{item.lastMonthDiffOpen,jdbcType=REAL}, #{item.lastMonthDiffHigh,jdbcType=REAL}, #{item.lastMonthDiffLow,jdbcType=REAL}, 
+        #{item.lastMonthDiffClose,jdbcType=REAL}, #{item.lastMonthDiffBuyMoney,jdbcType=REAL}, #{item.lastMonthDiffFailMoney,jdbcType=REAL}, 
+        #{item.lastMonthDiffNetProfit,jdbcType=REAL}, #{item.lastYearDiffOpen,jdbcType=REAL}, #{item.lastYearDiffHigh,jdbcType=REAL}, 
+        #{item.lastYearDiffLow,jdbcType=REAL}, #{item.lastYearDiffClose,jdbcType=REAL}, #{item.lastYearDiffBuyMoney,jdbcType=REAL}, 
+        #{item.lastYearDiffFailMoney,jdbcType=REAL}, #{item.lastYearDiffNetProfit,jdbcType=REAL}, 
+        #{item.createDate,jdbcType=TIMESTAMP}, #{item.updateDate,jdbcType=TIMESTAMP})
+      </foreach>
+    </if>
+  </insert>
+</mapper>

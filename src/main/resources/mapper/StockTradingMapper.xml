@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wdke.stock.storage.dao.StockTradingMapper">
+  <resultMap id="BaseResultMap" type="com.wdke.stock.storage.entity.StockTrading">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="stock_code" jdbcType="VARCHAR" property="stockCode" />
+    <result column="stock_type" jdbcType="INTEGER" property="stockType" />
+    <result column="stock_name" jdbcType="VARCHAR" property="stockName" />
+    <result column="money" jdbcType="REAL" property="money" />
+    <result column="commission" jdbcType="REAL" property="commission" />
+    <result column="commission_rate" jdbcType="REAL" property="commissionRate" />
+    <result column="transfer_fee" jdbcType="REAL" property="transferFee" />
+    <result column="stamp_duty" jdbcType="REAL" property="stampDuty" />
+    <result column="trading_number" jdbcType="INTEGER" property="tradingNumber" />
+    <result column="trading_price" jdbcType="REAL" property="tradingPrice" />
+    <result column="types" jdbcType="INTEGER" property="types" />
+    <result column="isend" jdbcType="INTEGER" property="isend" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, stock_code, stock_type, stock_name, money, commission, commission_rate, transfer_fee, 
+    stamp_duty, trading_number, trading_price, types, isend, user_id, create_date, update_date
+  </sql>
+  <select id="selectByExample" parameterType="com.wdke.stock.storage.entity.StockTradingExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from stock_trading
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="offset != null and limit != null">
+      limit ${offset}, ${limit}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from stock_trading
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from stock_trading
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.wdke.stock.storage.entity.StockTradingExample">
+    delete from stock_trading
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.wdke.stock.storage.entity.StockTrading">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into stock_trading (stock_code, stock_type, stock_name, 
+      money, commission, commission_rate, 
+      transfer_fee, stamp_duty, trading_number, 
+      trading_price, types, isend, 
+      user_id, create_date, update_date
+      )
+    values (#{stockCode,jdbcType=VARCHAR}, #{stockType,jdbcType=INTEGER}, #{stockName,jdbcType=VARCHAR}, 
+      #{money,jdbcType=REAL}, #{commission,jdbcType=REAL}, #{commissionRate,jdbcType=REAL}, 
+      #{transferFee,jdbcType=REAL}, #{stampDuty,jdbcType=REAL}, #{tradingNumber,jdbcType=INTEGER}, 
+      #{tradingPrice,jdbcType=REAL}, #{types,jdbcType=INTEGER}, #{isend,jdbcType=INTEGER}, 
+      #{userId,jdbcType=BIGINT}, #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.wdke.stock.storage.entity.StockTrading">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into stock_trading
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="stockCode != null">
+        stock_code,
+      </if>
+      <if test="stockType != null">
+        stock_type,
+      </if>
+      <if test="stockName != null">
+        stock_name,
+      </if>
+      <if test="money != null">
+        money,
+      </if>
+      <if test="commission != null">
+        commission,
+      </if>
+      <if test="commissionRate != null">
+        commission_rate,
+      </if>
+      <if test="transferFee != null">
+        transfer_fee,
+      </if>
+      <if test="stampDuty != null">
+        stamp_duty,
+      </if>
+      <if test="tradingNumber != null">
+        trading_number,
+      </if>
+      <if test="tradingPrice != null">
+        trading_price,
+      </if>
+      <if test="types != null">
+        types,
+      </if>
+      <if test="isend != null">
+        isend,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="stockCode != null">
+        #{stockCode,jdbcType=VARCHAR},
+      </if>
+      <if test="stockType != null">
+        #{stockType,jdbcType=INTEGER},
+      </if>
+      <if test="stockName != null">
+        #{stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="money != null">
+        #{money,jdbcType=REAL},
+      </if>
+      <if test="commission != null">
+        #{commission,jdbcType=REAL},
+      </if>
+      <if test="commissionRate != null">
+        #{commissionRate,jdbcType=REAL},
+      </if>
+      <if test="transferFee != null">
+        #{transferFee,jdbcType=REAL},
+      </if>
+      <if test="stampDuty != null">
+        #{stampDuty,jdbcType=REAL},
+      </if>
+      <if test="tradingNumber != null">
+        #{tradingNumber,jdbcType=INTEGER},
+      </if>
+      <if test="tradingPrice != null">
+        #{tradingPrice,jdbcType=REAL},
+      </if>
+      <if test="types != null">
+        #{types,jdbcType=INTEGER},
+      </if>
+      <if test="isend != null">
+        #{isend,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.wdke.stock.storage.entity.StockTradingExample" resultType="java.lang.Long">
+    select count(*) from stock_trading
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update stock_trading
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.stockCode != null">
+        stock_code = #{record.stockCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.stockType != null">
+        stock_type = #{record.stockType,jdbcType=INTEGER},
+      </if>
+      <if test="record.stockName != null">
+        stock_name = #{record.stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.money != null">
+        money = #{record.money,jdbcType=REAL},
+      </if>
+      <if test="record.commission != null">
+        commission = #{record.commission,jdbcType=REAL},
+      </if>
+      <if test="record.commissionRate != null">
+        commission_rate = #{record.commissionRate,jdbcType=REAL},
+      </if>
+      <if test="record.transferFee != null">
+        transfer_fee = #{record.transferFee,jdbcType=REAL},
+      </if>
+      <if test="record.stampDuty != null">
+        stamp_duty = #{record.stampDuty,jdbcType=REAL},
+      </if>
+      <if test="record.tradingNumber != null">
+        trading_number = #{record.tradingNumber,jdbcType=INTEGER},
+      </if>
+      <if test="record.tradingPrice != null">
+        trading_price = #{record.tradingPrice,jdbcType=REAL},
+      </if>
+      <if test="record.types != null">
+        types = #{record.types,jdbcType=INTEGER},
+      </if>
+      <if test="record.isend != null">
+        isend = #{record.isend,jdbcType=INTEGER},
+      </if>
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=BIGINT},
+      </if>
+      <if test="record.createDate != null">
+        create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateDate != null">
+        update_date = #{record.updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateSql != null" >
+        ${record.updateSql},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update stock_trading
+    set id = #{record.id,jdbcType=INTEGER},
+      stock_code = #{record.stockCode,jdbcType=VARCHAR},
+      stock_type = #{record.stockType,jdbcType=INTEGER},
+      stock_name = #{record.stockName,jdbcType=VARCHAR},
+      money = #{record.money,jdbcType=REAL},
+      commission = #{record.commission,jdbcType=REAL},
+      commission_rate = #{record.commissionRate,jdbcType=REAL},
+      transfer_fee = #{record.transferFee,jdbcType=REAL},
+      stamp_duty = #{record.stampDuty,jdbcType=REAL},
+      trading_number = #{record.tradingNumber,jdbcType=INTEGER},
+      trading_price = #{record.tradingPrice,jdbcType=REAL},
+      types = #{record.types,jdbcType=INTEGER},
+      isend = #{record.isend,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=BIGINT},
+      create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      update_date = #{record.updateDate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wdke.stock.storage.entity.StockTrading">
+    update stock_trading
+    <set>
+      <if test="stockCode != null">
+        stock_code = #{stockCode,jdbcType=VARCHAR},
+      </if>
+      <if test="stockType != null">
+        stock_type = #{stockType,jdbcType=INTEGER},
+      </if>
+      <if test="stockName != null">
+        stock_name = #{stockName,jdbcType=VARCHAR},
+      </if>
+      <if test="money != null">
+        money = #{money,jdbcType=REAL},
+      </if>
+      <if test="commission != null">
+        commission = #{commission,jdbcType=REAL},
+      </if>
+      <if test="commissionRate != null">
+        commission_rate = #{commissionRate,jdbcType=REAL},
+      </if>
+      <if test="transferFee != null">
+        transfer_fee = #{transferFee,jdbcType=REAL},
+      </if>
+      <if test="stampDuty != null">
+        stamp_duty = #{stampDuty,jdbcType=REAL},
+      </if>
+      <if test="tradingNumber != null">
+        trading_number = #{tradingNumber,jdbcType=INTEGER},
+      </if>
+      <if test="tradingPrice != null">
+        trading_price = #{tradingPrice,jdbcType=REAL},
+      </if>
+      <if test="types != null">
+        types = #{types,jdbcType=INTEGER},
+      </if>
+      <if test="isend != null">
+        isend = #{isend,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wdke.stock.storage.entity.StockTrading">
+    update stock_trading
+    set stock_code = #{stockCode,jdbcType=VARCHAR},
+      stock_type = #{stockType,jdbcType=INTEGER},
+      stock_name = #{stockName,jdbcType=VARCHAR},
+      money = #{money,jdbcType=REAL},
+      commission = #{commission,jdbcType=REAL},
+      commission_rate = #{commissionRate,jdbcType=REAL},
+      transfer_fee = #{transferFee,jdbcType=REAL},
+      stamp_duty = #{stampDuty,jdbcType=REAL},
+      trading_number = #{tradingNumber,jdbcType=INTEGER},
+      trading_price = #{tradingPrice,jdbcType=REAL},
+      types = #{types,jdbcType=INTEGER},
+      isend = #{isend,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=BIGINT},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByExampleWithRowbounds" parameterType="com.wdke.stock.storage.entity.StockTradingExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from stock_trading
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="sumByExample" parameterType="com.wdke.stock.storage.entity.StockTradingExample" resultType="long" >
+    select sum(${sumCol}) from stock_trading
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <insert id="batchInsert">
+    <if test="items.get(0) != null">
+            insert into stock_trading  (stock_code, stock_type, stock_name, 
+        money, commission, commission_rate, 
+        transfer_fee, stamp_duty, trading_number, 
+        trading_price, types, isend, 
+        user_id, create_date, update_date
+        )
+      values
+      <foreach collection="items" item="item" index="index" separator=",">
+      (#{item.stockCode,jdbcType=VARCHAR}, #{item.stockType,jdbcType=INTEGER}, #{item.stockName,jdbcType=VARCHAR}, 
+        #{item.money,jdbcType=REAL}, #{item.commission,jdbcType=REAL}, #{item.commissionRate,jdbcType=REAL}, 
+        #{item.transferFee,jdbcType=REAL}, #{item.stampDuty,jdbcType=REAL}, #{item.tradingNumber,jdbcType=INTEGER}, 
+        #{item.tradingPrice,jdbcType=REAL}, #{item.types,jdbcType=INTEGER}, #{item.isend,jdbcType=INTEGER}, 
+        #{item.userId,jdbcType=BIGINT}, #{item.createDate,jdbcType=TIMESTAMP}, #{item.updateDate,jdbcType=TIMESTAMP}
+        )
+      </foreach>
+    </if>
+  </insert>
+</mapper>
