@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wdke.stock.storage.dao.WechatUserMapper">
+  <resultMap id="BaseResultMap" type="com.wdke.stock.storage.entity.WechatUser">
+    <id column="openid" jdbcType="VARCHAR" property="openid" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="unionid" jdbcType="VARCHAR" property="unionid" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="avatar_url" jdbcType="VARCHAR" property="avatarUrl" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="language" jdbcType="VARCHAR" property="language" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    openid, user_id, unionid, nick_name, avatar_url, gender, language, country, city, 
+    province, create_time, update_time
+  </sql>
+  <select id="selectByExample" parameterType="com.wdke.stock.storage.entity.WechatUserExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from wechat_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="offset != null and limit != null">
+      limit ${offset}, ${limit}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from wechat_user
+    where openid = #{openid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from wechat_user
+    where openid = #{openid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.wdke.stock.storage.entity.WechatUserExample">
+    delete from wechat_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.wdke.stock.storage.entity.WechatUser">
+    insert into wechat_user (openid, user_id, unionid, 
+      nick_name, avatar_url, gender, 
+      language, country, city, 
+      province, create_time, update_time
+      )
+    values (#{openid,jdbcType=VARCHAR}, #{userId,jdbcType=BIGINT}, #{unionid,jdbcType=VARCHAR}, 
+      #{nickName,jdbcType=VARCHAR}, #{avatarUrl,jdbcType=VARCHAR}, #{gender,jdbcType=INTEGER}, 
+      #{language,jdbcType=VARCHAR}, #{country,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, 
+      #{province,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.wdke.stock.storage.entity.WechatUser">
+    insert into wechat_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="openid != null">
+        openid,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="unionid != null">
+        unionid,
+      </if>
+      <if test="nickName != null">
+        nick_name,
+      </if>
+      <if test="avatarUrl != null">
+        avatar_url,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="language != null">
+        language,
+      </if>
+      <if test="country != null">
+        country,
+      </if>
+      <if test="city != null">
+        city,
+      </if>
+      <if test="province != null">
+        province,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="openid != null">
+        #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="unionid != null">
+        #{unionid,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null">
+        #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="avatarUrl != null">
+        #{avatarUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=INTEGER},
+      </if>
+      <if test="language != null">
+        #{language,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null">
+        #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.wdke.stock.storage.entity.WechatUserExample" resultType="java.lang.Long">
+    select count(*) from wechat_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update wechat_user
+    <set>
+      <if test="record.openid != null">
+        openid = #{record.openid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=BIGINT},
+      </if>
+      <if test="record.unionid != null">
+        unionid = #{record.unionid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.nickName != null">
+        nick_name = #{record.nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.avatarUrl != null">
+        avatar_url = #{record.avatarUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gender != null">
+        gender = #{record.gender,jdbcType=INTEGER},
+      </if>
+      <if test="record.language != null">
+        language = #{record.language,jdbcType=VARCHAR},
+      </if>
+      <if test="record.country != null">
+        country = #{record.country,jdbcType=VARCHAR},
+      </if>
+      <if test="record.city != null">
+        city = #{record.city,jdbcType=VARCHAR},
+      </if>
+      <if test="record.province != null">
+        province = #{record.province,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateTime != null">
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateSql != null" >
+        ${record.updateSql},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update wechat_user
+    set openid = #{record.openid,jdbcType=VARCHAR},
+      user_id = #{record.userId,jdbcType=BIGINT},
+      unionid = #{record.unionid,jdbcType=VARCHAR},
+      nick_name = #{record.nickName,jdbcType=VARCHAR},
+      avatar_url = #{record.avatarUrl,jdbcType=VARCHAR},
+      gender = #{record.gender,jdbcType=INTEGER},
+      language = #{record.language,jdbcType=VARCHAR},
+      country = #{record.country,jdbcType=VARCHAR},
+      city = #{record.city,jdbcType=VARCHAR},
+      province = #{record.province,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      update_time = #{record.updateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wdke.stock.storage.entity.WechatUser">
+    update wechat_user
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="unionid != null">
+        unionid = #{unionid,jdbcType=VARCHAR},
+      </if>
+      <if test="nickName != null">
+        nick_name = #{nickName,jdbcType=VARCHAR},
+      </if>
+      <if test="avatarUrl != null">
+        avatar_url = #{avatarUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=INTEGER},
+      </if>
+      <if test="language != null">
+        language = #{language,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        country = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        city = #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null">
+        province = #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where openid = #{openid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wdke.stock.storage.entity.WechatUser">
+    update wechat_user
+    set user_id = #{userId,jdbcType=BIGINT},
+      unionid = #{unionid,jdbcType=VARCHAR},
+      nick_name = #{nickName,jdbcType=VARCHAR},
+      avatar_url = #{avatarUrl,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=INTEGER},
+      language = #{language,jdbcType=VARCHAR},
+      country = #{country,jdbcType=VARCHAR},
+      city = #{city,jdbcType=VARCHAR},
+      province = #{province,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where openid = #{openid,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByExampleWithRowbounds" parameterType="com.wdke.stock.storage.entity.WechatUserExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from wechat_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="sumByExample" parameterType="com.wdke.stock.storage.entity.WechatUserExample" resultType="long" >
+    select sum(${sumCol}) from wechat_user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <insert id="batchInsert">
+    <if test="items.get(0) != null">
+            insert into wechat_user  (openid, user_id, unionid, 
+        nick_name, avatar_url, gender, 
+        language, country, city, 
+        province, create_time, update_time
+        )
+      values
+      <foreach collection="items" item="item" index="index" separator=",">
+      (#{item.openid,jdbcType=VARCHAR}, #{item.userId,jdbcType=BIGINT}, #{item.unionid,jdbcType=VARCHAR}, 
+        #{item.nickName,jdbcType=VARCHAR}, #{item.avatarUrl,jdbcType=VARCHAR}, #{item.gender,jdbcType=INTEGER}, 
+        #{item.language,jdbcType=VARCHAR}, #{item.country,jdbcType=VARCHAR}, #{item.city,jdbcType=VARCHAR}, 
+        #{item.province,jdbcType=VARCHAR}, #{item.createTime,jdbcType=TIMESTAMP}, #{item.updateTime,jdbcType=TIMESTAMP}
+        )
+      </foreach>
+    </if>
+  </insert>
+</mapper>
